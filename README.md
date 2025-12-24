@@ -19,7 +19,10 @@ Sistem ini bertujuan untuk menggantikan proses pencatatan manual yang berisiko m
 
 * Manajemen akun dan hak akses pengguna
 ## ERD
-...
+![ERD Sistem Informasi Laundry](https://github.com/Aprill33/SistemLaundry/blob/master/ERD%20-%20sistem%20informasi%20laundry.jpeg)
 
 ## Tech Stack
-...
+- Framework Tampilan : Guna.UI
+- Backend : C#
+- DB : MySQL
+- Database Connector : MySqlConnector
