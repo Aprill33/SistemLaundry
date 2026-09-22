@@ -56,61 +56,64 @@ Sistem memiliki dua jenis pengguna (*role*), yaitu **Admin** dan **Kasir**[cite:
 ## h. 🖼️ Screenshot Tampilan Aplikasi
 
 ### 1. Halaman Awal Program (Run Program)
-<img width="800" alt="Halaman Awal" src="<img width="624" height="330" alt="Project_ NET_Fundamental" src="https://github.com/user-attachments/assets/c7344674-6849-4418-abd8-5a48653a848d" />
-" />
+<img width="624" height="330" alt="Project_ NET_Fundamental" src="https://github.com/user-attachments/assets/c7344674-6849-4418-abd8-5a48653a848d" />
+
 
 ---
 
 ### 2. Tampilan Menu Role Admin
 * **Halaman Login Admin**  
-  <img width="800" alt="<img width="624" height="328" alt="HalamanLoginAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/9af51117-b0d8-4b39-a848-45dfea10dd02" />
-" />
+<img width="624" height="328" alt="HalamanLoginAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/9af51117-b0d8-4b39-a848-45dfea10dd02" />
+
 
 * **Halaman Beranda Admin**  
-  <img width="800" alt="Beranda Admin" src="<img width="626" height="328" alt="HalamanBerandaAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/e0ce572b-c6ab-40fc-8780-fba9d37ab86f" />
-" />
+<img width="626" height="328" alt="HalamanBerandaAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/e0ce572b-c6ab-40fc-8780-fba9d37ab86f" />
+
 
 * **Halaman Data Pelanggan Admin**  
-  <img width="800" alt="Pelanggan Admin" src="<img width="628" height="329" alt="HalamanPelangganAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/15d00750-ca3e-44e3-9f24-5e01537227c6" />
-" />
+<img width="628" height="329" alt="HalamanPelangganAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/15d00750-ca3e-44e3-9f24-5e01537227c6" />
+
 
 * **Halaman Data Layanan Admin**  
-  <img width="800" alt="Layanan Admin" src="<img width="625" height="328" alt="HalamanLayananAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/42ea2efb-7650-4d2d-894e-dc37d1654dcc" />
-" />
+<img width="625" height="328" alt="HalamanLayananAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/42ea2efb-7650-4d2d-894e-dc37d1654dcc" />
+
 
 * **Halaman Transaksi Admin**  
-  <img width="800" alt="Transaksi Admin" src="<img width="625" height="329" alt="HalamanTransaksiAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/11eb3595-31a5-4136-b2b9-4bd8680eb7d5" />
-" />
+ <img width="625" height="329" alt="HalamanTransaksiAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/11eb3595-31a5-4136-b2b9-4bd8680eb7d5" />
+
 
 * **Halaman Detail Transaksi Admin**  
-  <img width="800" alt="Detail Transaksi Admin" src="<img width="626" height="328" alt="HalamanDetailTransaksiAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/c1e983f0-124b-45b7-9127-b4e0d7b239c8" />
-" />
+<img width="626" height="328" alt="HalamanDetailTransaksiAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/c1e983f0-124b-45b7-9127-b4e0d7b239c8" />
+
 
 * **Halaman Edit Transaksi Admin**  
-  <img width="800" alt="Edit Transaksi Admin" src="<img width="626" height="330" alt="HalamanEditTransaksiAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/959a6931-b70d-46d2-9318-f60b9e539909" />
-" />
+<img width="626" height="330" alt="HalamanEditTransaksiAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/959a6931-b70d-46d2-9318-f60b9e539909" />
+
 
 * **Halaman Kelola Admin / Akun**  
-  <img width="800" alt="Kelola Admin" src="<img width="625" height="327" alt="HalamanKelolaAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/2e7a4e99-88e4-4427-bd9b-934ca3b9d862" />
-" />
+<img width="625" height="327" alt="HalamanKelolaAdmin_CSharp_Fundamental" src="https://github.com/user-attachments/assets/2e7a4e99-88e4-4427-bd9b-934ca3b9d862" />
+
 
 ---
 
 ### 3. Tampilan Menu Role Kasir
 * **Halaman Login Kasir**  
-  <img width="800" alt="Login Kasir" src="MASUKKAN_LINK_GAMBAR_LOGIN_KASIR_DISINI" />
+<img width="623" height="327" alt="HalamanLoginKasir_CSharp_Fundamental" src="https://github.com/user-attachments/assets/9e5afd02-ecaa-49bf-895a-72597b3f2d39" />
+
 
 * **Halaman Pendaftaran Kasir (Register)**  
-  <img width="800" alt="Daftar Kasir" src="MASUKKAN_LINK_GAMBAR_DAFTAR_KASIR_DISINI" />
+<img width="623" height="325" alt="HalamanDaftarKasir_CSharp_Fundamental" src="https://github.com/user-attachments/assets/7f734f7a-8b0b-45d3-acde-bf5301f22b6c" />
 
 * **Halaman Beranda Kasir**  
-  <img width="800" alt="Beranda Kasir" src="MASUKKAN_LINK_GAMBAR_BERANDA_KASIR_DISINI" />
+<img width="625" height="325" alt="HalamanBerandaKasir_CSharp_Fundamental" src="https://github.com/user-attachments/assets/52e72d6c-8468-438b-a894-47d117d29952" />
 
 * **Halaman Tambah Pelanggan (Kasir)**  
-  <img width="800" alt="Tambah Pelanggan Kasir" src="MASUKKAN_LINK_GAMBAR_TAMBAH_PELANGGAN_KASIR_DISINI" />
+<img width="625" height="327" alt="HalamanTambahPelangganKasir_CSharp_Fundamental" src="https://github.com/user-attachments/assets/8120fecf-83f9-414a-a93f-7bd8ce904555" />
 
 * **Halaman Tambah Transaksi (Kasir)**  
-  <img width="800" alt="Tambah Transaksi Kasir" src="MASUKKAN_LINK_GAMBAR_TAMBAH_TRANSAKSI_KASIR_DISINI" />
+<img width="629" height="331" alt="HalamanTambahTransaksiKasir_CSharp_Fundamental" src="https://github.com/user-attachments/assets/ad7bdcf4-5211-41d8-a7e2-2cae26476d10" />
+
 
 * **Halaman Pembayaran (Kasir)**  
-  <img width="800" alt="Pembayaran Kasir" src="MASUKKAN_LINK_GAMBAR_PEMBAYARAN_KASIR_DISINI" />
+<img width="405" height="327" alt="HalamanPembayaranKasir_CSharpFundamental" src="https://github.com/user-attachments/assets/403cee7d-ada9-4bed-bff6-0a2b852a4d4c" />
+
