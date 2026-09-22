@@ -252,6 +252,19 @@ namespace SistemLaundry.View
         private void btn_kembali_Click(object sender, EventArgs e)
         {
             MenuUtama menuUtama = new MenuUtama();
+
+            // Menyesuaikan ukuran layar (Maximized atau Normal)
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                menuUtama.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                menuUtama.StartPosition = FormStartPosition.Manual;
+                menuUtama.Size = this.Size;
+                menuUtama.Location = this.Location;
+            }
+
             menuUtama.Show();
             this.Close();
         }
@@ -277,6 +290,11 @@ namespace SistemLaundry.View
             dgv_layanan.DataSource = dt;
 
             dgv_layanan.Columns["gambar"].Visible = false;
+        }
+
+        private void flowLayoutPanel_pencarian_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

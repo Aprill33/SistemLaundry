@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_atas_transaksi = new System.Windows.Forms.Panel();
-            this.btn_keluar = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_tambah_transaksi = new System.Windows.Forms.Label();
             this.ShadowPanel_input_data_transaksi = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.txt_jumlah = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,6 +47,7 @@
             this.cbx_jenis_layanan = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_status_pembayaran = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_status_laundry = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cbx_nama_pelanggan = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_id_transaksi = new Guna.UI2.WinForms.Guna2TextBox();
             this.lbl_total = new System.Windows.Forms.Label();
             this.lbl_status_pembayaran = new System.Windows.Forms.Label();
@@ -61,12 +61,11 @@
             this.panel_dgv_detail_transaksi = new System.Windows.Forms.Panel();
             this.dgv_detail_transaksi = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel_button = new System.Windows.Forms.Panel();
+            this.btn_detail_transaksi = new Guna.UI2.WinForms.Guna2Button();
             this.btn_kembali = new Guna.UI2.WinForms.Guna2Button();
             this.btn_simpan = new Guna.UI2.WinForms.Guna2Button();
             this.btn_tambah_layanan = new Guna.UI2.WinForms.Guna2Button();
             this.btn_bayar = new Guna.UI2.WinForms.Guna2Button();
-            this.cbx_nama_pelanggan = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btn_detail_transaksi = new Guna.UI2.WinForms.Guna2Button();
             this.panel_atas_transaksi.SuspendLayout();
             this.ShadowPanel_input_data_transaksi.SuspendLayout();
             this.panel_bawah.SuspendLayout();
@@ -78,33 +77,12 @@
             // panel_atas_transaksi
             // 
             this.panel_atas_transaksi.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel_atas_transaksi.Controls.Add(this.btn_keluar);
             this.panel_atas_transaksi.Controls.Add(this.lbl_tambah_transaksi);
             this.panel_atas_transaksi.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_atas_transaksi.Location = new System.Drawing.Point(0, 0);
             this.panel_atas_transaksi.Name = "panel_atas_transaksi";
             this.panel_atas_transaksi.Size = new System.Drawing.Size(1248, 64);
             this.panel_atas_transaksi.TabIndex = 0;
-            // 
-            // btn_keluar
-            // 
-            this.btn_keluar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_keluar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_keluar.BorderColor = System.Drawing.Color.Maroon;
-            this.btn_keluar.BorderRadius = 5;
-            this.btn_keluar.BorderThickness = 2;
-            this.btn_keluar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_keluar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_keluar.FillColor = System.Drawing.Color.White;
-            this.btn_keluar.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.btn_keluar.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_keluar.Location = new System.Drawing.Point(1194, 8);
-            this.btn_keluar.Name = "btn_keluar";
-            this.btn_keluar.Size = new System.Drawing.Size(44, 43);
-            this.btn_keluar.TabIndex = 11;
-            this.btn_keluar.Text = "X";
             // 
             // lbl_tambah_transaksi
             // 
@@ -119,6 +97,7 @@
             // 
             // ShadowPanel_input_data_transaksi
             // 
+            this.ShadowPanel_input_data_transaksi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ShadowPanel_input_data_transaksi.BackColor = System.Drawing.Color.Transparent;
             this.ShadowPanel_input_data_transaksi.Controls.Add(this.txt_jumlah);
             this.ShadowPanel_input_data_transaksi.Controls.Add(this.dtp_tanggal_selesai);
@@ -360,6 +339,23 @@
             this.txt_status_laundry.Size = new System.Drawing.Size(283, 36);
             this.txt_status_laundry.TabIndex = 12;
             // 
+            // cbx_nama_pelanggan
+            // 
+            this.cbx_nama_pelanggan.BackColor = System.Drawing.Color.Transparent;
+            this.cbx_nama_pelanggan.BorderRadius = 2;
+            this.cbx_nama_pelanggan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbx_nama_pelanggan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_nama_pelanggan.FillColor = System.Drawing.Color.Pink;
+            this.cbx_nama_pelanggan.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_nama_pelanggan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbx_nama_pelanggan.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbx_nama_pelanggan.ForeColor = System.Drawing.Color.DimGray;
+            this.cbx_nama_pelanggan.ItemHeight = 30;
+            this.cbx_nama_pelanggan.Location = new System.Drawing.Point(261, 81);
+            this.cbx_nama_pelanggan.Name = "cbx_nama_pelanggan";
+            this.cbx_nama_pelanggan.Size = new System.Drawing.Size(283, 36);
+            this.cbx_nama_pelanggan.TabIndex = 11;
+            // 
             // txt_id_transaksi
             // 
             this.txt_id_transaksi.BorderRadius = 5;
@@ -482,7 +478,6 @@
             // panel_bawah
             // 
             this.panel_bawah.Controls.Add(this.panel_dgv_detail_transaksi);
-            this.panel_bawah.Controls.Add(this.panel_button);
             this.panel_bawah.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_bawah.Location = new System.Drawing.Point(0, 466);
             this.panel_bawah.Name = "panel_bawah";
@@ -492,45 +487,47 @@
             // panel_dgv_detail_transaksi
             // 
             this.panel_dgv_detail_transaksi.Controls.Add(this.dgv_detail_transaksi);
+            this.panel_dgv_detail_transaksi.Controls.Add(this.panel_button);
             this.panel_dgv_detail_transaksi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_dgv_detail_transaksi.Location = new System.Drawing.Point(0, 63);
+            this.panel_dgv_detail_transaksi.Location = new System.Drawing.Point(0, 0);
             this.panel_dgv_detail_transaksi.Name = "panel_dgv_detail_transaksi";
-            this.panel_dgv_detail_transaksi.Size = new System.Drawing.Size(1248, 195);
+            this.panel_dgv_detail_transaksi.Size = new System.Drawing.Size(1248, 258);
             this.panel_dgv_detail_transaksi.TabIndex = 5;
             // 
             // dgv_detail_transaksi
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Gainsboro;
-            this.dgv_detail_transaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_detail_transaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            this.dgv_detail_transaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_detail_transaksi.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_detail_transaksi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_detail_transaksi.ColumnHeadersHeight = 40;
             this.dgv_detail_transaksi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.LavenderBlush;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_detail_transaksi.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_detail_transaksi.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_detail_transaksi.GridColor = System.Drawing.Color.HotPink;
-            this.dgv_detail_transaksi.Location = new System.Drawing.Point(67, 6);
+            this.dgv_detail_transaksi.Location = new System.Drawing.Point(67, 69);
             this.dgv_detail_transaksi.Name = "dgv_detail_transaksi";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.HotPink;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_detail_transaksi.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.HotPink;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_detail_transaksi.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_detail_transaksi.RowHeadersVisible = false;
             this.dgv_detail_transaksi.RowHeadersWidth = 62;
             this.dgv_detail_transaksi.RowTemplate.Height = 28;
@@ -560,16 +557,40 @@
             // 
             // panel_button
             // 
+            this.panel_button.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel_button.Controls.Add(this.btn_detail_transaksi);
             this.panel_button.Controls.Add(this.btn_kembali);
             this.panel_button.Controls.Add(this.btn_simpan);
             this.panel_button.Controls.Add(this.btn_tambah_layanan);
             this.panel_button.Controls.Add(this.btn_bayar);
-            this.panel_button.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_button.Location = new System.Drawing.Point(0, 0);
+            this.panel_button.Location = new System.Drawing.Point(3, 3);
             this.panel_button.Name = "panel_button";
-            this.panel_button.Size = new System.Drawing.Size(1248, 63);
+            this.panel_button.Size = new System.Drawing.Size(1242, 63);
             this.panel_button.TabIndex = 4;
+            // 
+            // btn_detail_transaksi
+            // 
+            this.btn_detail_transaksi.BorderColor = System.Drawing.Color.RosyBrown;
+            this.btn_detail_transaksi.BorderRadius = 5;
+            this.btn_detail_transaksi.BorderThickness = 2;
+            this.btn_detail_transaksi.CustomBorderColor = System.Drawing.Color.SaddleBrown;
+            this.btn_detail_transaksi.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 4);
+            this.btn_detail_transaksi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_detail_transaksi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_detail_transaksi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_detail_transaksi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_detail_transaksi.FillColor = System.Drawing.Color.Brown;
+            this.btn_detail_transaksi.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_detail_transaksi.ForeColor = System.Drawing.Color.White;
+            this.btn_detail_transaksi.HoverState.BorderColor = System.Drawing.Color.DarkGoldenrod;
+            this.btn_detail_transaksi.HoverState.FillColor = System.Drawing.Color.Firebrick;
+            this.btn_detail_transaksi.Location = new System.Drawing.Point(949, 5);
+            this.btn_detail_transaksi.Margin = new System.Windows.Forms.Padding(3, 5, 15, 5);
+            this.btn_detail_transaksi.Name = "btn_detail_transaksi";
+            this.btn_detail_transaksi.Size = new System.Drawing.Size(275, 48);
+            this.btn_detail_transaksi.TabIndex = 12;
+            this.btn_detail_transaksi.Text = "Detail Transaksi";
+            this.btn_detail_transaksi.Click += new System.EventHandler(this.btn_detail_transaksi_Click);
             // 
             // btn_kembali
             // 
@@ -663,47 +684,6 @@
             this.btn_bayar.Text = "Bayar";
             this.btn_bayar.Click += new System.EventHandler(this.btn_bayar_Click);
             // 
-            // cbx_nama_pelanggan
-            // 
-            this.cbx_nama_pelanggan.BackColor = System.Drawing.Color.Transparent;
-            this.cbx_nama_pelanggan.BorderRadius = 2;
-            this.cbx_nama_pelanggan.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbx_nama_pelanggan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_nama_pelanggan.FillColor = System.Drawing.Color.Pink;
-            this.cbx_nama_pelanggan.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_nama_pelanggan.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbx_nama_pelanggan.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbx_nama_pelanggan.ForeColor = System.Drawing.Color.DimGray;
-            this.cbx_nama_pelanggan.ItemHeight = 30;
-            this.cbx_nama_pelanggan.Location = new System.Drawing.Point(261, 81);
-            this.cbx_nama_pelanggan.Name = "cbx_nama_pelanggan";
-            this.cbx_nama_pelanggan.Size = new System.Drawing.Size(283, 36);
-            this.cbx_nama_pelanggan.TabIndex = 11;
-            // 
-            // btn_detail_transaksi
-            // 
-            this.btn_detail_transaksi.BorderColor = System.Drawing.Color.RosyBrown;
-            this.btn_detail_transaksi.BorderRadius = 5;
-            this.btn_detail_transaksi.BorderThickness = 2;
-            this.btn_detail_transaksi.CustomBorderColor = System.Drawing.Color.SaddleBrown;
-            this.btn_detail_transaksi.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 4);
-            this.btn_detail_transaksi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_detail_transaksi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_detail_transaksi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_detail_transaksi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_detail_transaksi.FillColor = System.Drawing.Color.Brown;
-            this.btn_detail_transaksi.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_detail_transaksi.ForeColor = System.Drawing.Color.White;
-            this.btn_detail_transaksi.HoverState.BorderColor = System.Drawing.Color.DarkGoldenrod;
-            this.btn_detail_transaksi.HoverState.FillColor = System.Drawing.Color.Firebrick;
-            this.btn_detail_transaksi.Location = new System.Drawing.Point(949, 5);
-            this.btn_detail_transaksi.Margin = new System.Windows.Forms.Padding(3, 5, 15, 5);
-            this.btn_detail_transaksi.Name = "btn_detail_transaksi";
-            this.btn_detail_transaksi.Size = new System.Drawing.Size(275, 48);
-            this.btn_detail_transaksi.TabIndex = 12;
-            this.btn_detail_transaksi.Text = "Detail Transaksi";
-            this.btn_detail_transaksi.Click += new System.EventHandler(this.btn_detail_transaksi_Click);
-            // 
             // TambahTransaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -716,6 +696,7 @@
             this.Name = "TambahTransaksi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TambahTransaksi";
+            this.Load += new System.EventHandler(this.TambahTransaksi_Load);
             this.panel_atas_transaksi.ResumeLayout(false);
             this.panel_atas_transaksi.PerformLayout();
             this.ShadowPanel_input_data_transaksi.ResumeLayout(false);
@@ -732,7 +713,6 @@
 
         private System.Windows.Forms.Panel panel_atas_transaksi;
         private System.Windows.Forms.Label lbl_tambah_transaksi;
-        private Guna.UI2.WinForms.Guna2Button btn_keluar;
         private Guna.UI2.WinForms.Guna2ShadowPanel ShadowPanel_input_data_transaksi;
         private System.Windows.Forms.Label lbl_tgl_masuk;
         private System.Windows.Forms.Label lbl_layanan;

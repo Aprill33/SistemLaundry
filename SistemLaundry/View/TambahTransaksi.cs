@@ -16,8 +16,8 @@ namespace SistemLaundry.View
         public static string NamaPelangganAktif;
         public static int TotalTransaksi;
         public static bool SudahBayar = false;
-        public static int UangBayarAktif; // Tambahkan ini
-        public static int KembalianAktif; // Tambahkan ini
+        public static int UangBayarAktif;
+        public static int KembalianAktif;
 
         public TambahTransaksi()
         {
@@ -40,7 +40,6 @@ namespace SistemLaundry.View
             txt_status_laundry.ReadOnly = true;
             txt_status_pembayaran.ReadOnly = true;
             btn_detail_transaksi.Enabled = false;
-
 
             txt_total.Text = "0";
             txt_total.ReadOnly = true;
@@ -169,21 +168,32 @@ namespace SistemLaundry.View
                  dtp_tanggal_masuk.Value,
                  dtp_tanggal_selesai.Value,
                  Convert.ToInt32(txt_total.Text),
-                 UangBayarAktif, // Kirim Uang Bayar
-                 KembalianAktif, // Kirim Kembalian
+                 UangBayarAktif,
+                 KembalianAktif,
                  dtDetail
              );
 
             MessageBox.Show("Transaksi berhasil disimpan.\nSilakan lihat Detail Transaksi.");
             btn_detail_transaksi.Enabled = true;
             btn_detail_transaksi.Focus();
-
         }
 
         private void btn_kembali_Click(object sender, EventArgs e)
         {
-            // Pastikan form Transaksi yang sudah ada ditampilkan kembali
             MenuKasir menuKasir = new MenuKasir();
+
+            // Menyamakan ukuran & status layar dengan form aktif saat ini
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                menuKasir.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                menuKasir.StartPosition = FormStartPosition.Manual;
+                menuKasir.Size = this.Size;
+                menuKasir.Location = this.Location;
+            }
+
             menuKasir.Show();
             this.Close();
         }
@@ -196,9 +206,7 @@ namespace SistemLaundry.View
                 return;
             }
 
-            
             IdTransaksiAktif = txt_id_transaksi.Text;
-
             TotalTransaksi = Convert.ToInt32(txt_total.Text);
             NamaPelangganAktif = cbx_nama_pelanggan.Text;
 
@@ -218,10 +226,24 @@ namespace SistemLaundry.View
         private void btn_detail_transaksi_Click(object sender, EventArgs e)
         {
             DetailTransaksi frmDetail = new DetailTransaksi(
-            IdTransaksiAktif,
-            LaundryController.ModeDetailTransaksi.Kasir
-        );
+                IdTransaksiAktif,
+                LaundryController.ModeDetailTransaksi.Kasir
+            );
+
+            // Menyamakan ukuran & status layar dengan form aktif saat ini
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                frmDetail.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frmDetail.StartPosition = FormStartPosition.Manual;
+                frmDetail.Size = this.Size;
+                frmDetail.Location = this.Location;
+            }
+
             frmDetail.ShowDialog();
+
             // ===== RESET FORM SETELAH DETAIL DITUTUP =====
             dtDetail.Clear();
             txt_total.Text = "0";
@@ -234,6 +256,10 @@ namespace SistemLaundry.View
             btn_bayar.Enabled = true;
 
             MessageBox.Show("Siap untuk transaksi baru ✅");
+        }
+        private void TambahTransaksi_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

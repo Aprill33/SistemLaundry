@@ -30,21 +30,21 @@
         {
             this.panel_kiri = new System.Windows.Forms.Panel();
             this.flowLayoutPanel_button = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel_gambar = new System.Windows.Forms.Panel();
-            this.lbl_si_laundry = new System.Windows.Forms.Label();
-            this.panel_atas = new System.Windows.Forms.Panel();
-            this.btn_keluar = new Guna.UI2.WinForms.Guna2Button();
             this.btn_beranda = new Guna.UI2.WinForms.Guna2Button();
             this.btn_data_pelanggan = new Guna.UI2.WinForms.Guna2Button();
             this.btn_data_layanan = new Guna.UI2.WinForms.Guna2Button();
             this.btn_transaksi = new Guna.UI2.WinForms.Guna2Button();
             this.btn_manajemen_admin = new Guna.UI2.WinForms.Guna2Button();
+            this.panel_gambar = new System.Windows.Forms.Panel();
             this.PictureBox_logo_laundry = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lbl_si_laundry = new System.Windows.Forms.Label();
+            this.panel_atas = new System.Windows.Forms.Panel();
+            this.btn_keluar = new Guna.UI2.WinForms.Guna2Button();
             this.panel_kiri.SuspendLayout();
             this.flowLayoutPanel_button.SuspendLayout();
             this.panel_gambar.SuspendLayout();
-            this.panel_atas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_logo_laundry)).BeginInit();
+            this.panel_atas.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_kiri
@@ -60,13 +60,13 @@
             // 
             // flowLayoutPanel_button
             // 
+            this.flowLayoutPanel_button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.flowLayoutPanel_button.AutoScroll = true;
             this.flowLayoutPanel_button.Controls.Add(this.btn_beranda);
             this.flowLayoutPanel_button.Controls.Add(this.btn_data_pelanggan);
             this.flowLayoutPanel_button.Controls.Add(this.btn_data_layanan);
             this.flowLayoutPanel_button.Controls.Add(this.btn_transaksi);
             this.flowLayoutPanel_button.Controls.Add(this.btn_manajemen_admin);
-            this.flowLayoutPanel_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel_button.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel_button.Location = new System.Drawing.Point(0, 244);
             this.flowLayoutPanel_button.Name = "flowLayoutPanel_button";
@@ -74,68 +74,6 @@
             this.flowLayoutPanel_button.Size = new System.Drawing.Size(309, 426);
             this.flowLayoutPanel_button.TabIndex = 1;
             this.flowLayoutPanel_button.WrapContents = false;
-            // 
-            // panel_gambar
-            // 
-            this.panel_gambar.BackColor = System.Drawing.Color.Transparent;
-            this.panel_gambar.Controls.Add(this.PictureBox_logo_laundry);
-            this.panel_gambar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_gambar.Location = new System.Drawing.Point(0, 0);
-            this.panel_gambar.Name = "panel_gambar";
-            this.panel_gambar.Size = new System.Drawing.Size(309, 244);
-            this.panel_gambar.TabIndex = 0;
-            // 
-            // lbl_si_laundry
-            // 
-            this.lbl_si_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_si_laundry.AutoSize = true;
-            this.lbl_si_laundry.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_si_laundry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.lbl_si_laundry.Location = new System.Drawing.Point(226, 9);
-            this.lbl_si_laundry.Name = "lbl_si_laundry";
-            this.lbl_si_laundry.Size = new System.Drawing.Size(414, 28);
-            this.lbl_si_laundry.TabIndex = 1;
-            this.lbl_si_laundry.Text = "Sistem Laundry | Apriluxe Laundry";
-            // 
-            // panel_atas
-            // 
-            this.panel_atas.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel_atas.Controls.Add(this.lbl_si_laundry);
-            this.panel_atas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_atas.Location = new System.Drawing.Point(309, 0);
-            this.panel_atas.Name = "panel_atas";
-            this.panel_atas.Size = new System.Drawing.Size(939, 49);
-            this.panel_atas.TabIndex = 4;
-            // 
-            // btn_keluar
-            // 
-            this.btn_keluar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_keluar.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btn_keluar.BorderRadius = 10;
-            this.btn_keluar.BorderThickness = 2;
-            this.btn_keluar.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 8);
-            this.btn_keluar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_keluar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_keluar.FillColor = System.Drawing.Color.LavenderBlush;
-            this.btn_keluar.FocusedColor = System.Drawing.Color.White;
-            this.btn_keluar.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_keluar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.btn_keluar.Image = global::SistemLaundry.Properties.Resources.logout_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24;
-            this.btn_keluar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_keluar.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_keluar.Location = new System.Drawing.Point(1045, 602);
-            this.btn_keluar.Margin = new System.Windows.Forms.Padding(5);
-            this.btn_keluar.Name = "btn_keluar";
-            this.btn_keluar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_keluar.PressedDepth = 20;
-            this.btn_keluar.Size = new System.Drawing.Size(189, 54);
-            this.btn_keluar.TabIndex = 5;
-            this.btn_keluar.Text = "Keluar";
-            this.btn_keluar.Click += new System.EventHandler(this.btn_keluar_Click);
             // 
             // btn_beranda
             // 
@@ -288,6 +226,16 @@
             this.btn_manajemen_admin.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_manajemen_admin.Click += new System.EventHandler(this.btn_manajemen_admin_Click);
             // 
+            // panel_gambar
+            // 
+            this.panel_gambar.BackColor = System.Drawing.Color.Transparent;
+            this.panel_gambar.Controls.Add(this.PictureBox_logo_laundry);
+            this.panel_gambar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_gambar.Location = new System.Drawing.Point(0, 0);
+            this.panel_gambar.Name = "panel_gambar";
+            this.panel_gambar.Size = new System.Drawing.Size(309, 244);
+            this.panel_gambar.TabIndex = 0;
+            // 
             // PictureBox_logo_laundry
             // 
             this.PictureBox_logo_laundry.Image = global::SistemLaundry.Properties.Resources.logo_laundry;
@@ -298,6 +246,56 @@
             this.PictureBox_logo_laundry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBox_logo_laundry.TabIndex = 4;
             this.PictureBox_logo_laundry.TabStop = false;
+            // 
+            // lbl_si_laundry
+            // 
+            this.lbl_si_laundry.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_si_laundry.AutoSize = true;
+            this.lbl_si_laundry.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_si_laundry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.lbl_si_laundry.Location = new System.Drawing.Point(226, 9);
+            this.lbl_si_laundry.Name = "lbl_si_laundry";
+            this.lbl_si_laundry.Size = new System.Drawing.Size(414, 28);
+            this.lbl_si_laundry.TabIndex = 1;
+            this.lbl_si_laundry.Text = "Sistem Laundry | Apriluxe Laundry";
+            // 
+            // panel_atas
+            // 
+            this.panel_atas.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panel_atas.Controls.Add(this.lbl_si_laundry);
+            this.panel_atas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_atas.Location = new System.Drawing.Point(309, 0);
+            this.panel_atas.Name = "panel_atas";
+            this.panel_atas.Size = new System.Drawing.Size(939, 49);
+            this.panel_atas.TabIndex = 4;
+            // 
+            // btn_keluar
+            // 
+            this.btn_keluar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_keluar.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btn_keluar.BorderRadius = 10;
+            this.btn_keluar.BorderThickness = 2;
+            this.btn_keluar.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 8);
+            this.btn_keluar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_keluar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_keluar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_keluar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_keluar.FillColor = System.Drawing.Color.LavenderBlush;
+            this.btn_keluar.FocusedColor = System.Drawing.Color.White;
+            this.btn_keluar.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_keluar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.btn_keluar.Image = global::SistemLaundry.Properties.Resources.logout_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24;
+            this.btn_keluar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_keluar.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_keluar.Location = new System.Drawing.Point(1045, 602);
+            this.btn_keluar.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_keluar.Name = "btn_keluar";
+            this.btn_keluar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_keluar.PressedDepth = 20;
+            this.btn_keluar.Size = new System.Drawing.Size(189, 54);
+            this.btn_keluar.TabIndex = 5;
+            this.btn_keluar.Text = "Keluar";
+            this.btn_keluar.Click += new System.EventHandler(this.btn_keluar_Click);
             // 
             // MenuUtama
             // 
@@ -310,14 +308,13 @@
             this.Controls.Add(this.panel_kiri);
             this.Name = "MenuUtama";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MenuUtama";
             this.Load += new System.EventHandler(this.MenuUtama_Load);
             this.panel_kiri.ResumeLayout(false);
             this.flowLayoutPanel_button.ResumeLayout(false);
             this.panel_gambar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_logo_laundry)).EndInit();
             this.panel_atas.ResumeLayout(false);
             this.panel_atas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_logo_laundry)).EndInit();
             this.ResumeLayout(false);
 
         }

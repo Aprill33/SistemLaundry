@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Masuk));
             this.panel_kiri = new System.Windows.Forms.Panel();
             this.panel_gambar = new System.Windows.Forms.Panel();
+            this.btn_kembali = new Guna.UI2.WinForms.Guna2Button();
+            this.pictureBox_logo_laundry = new System.Windows.Forms.PictureBox();
             this.lbl_hai_admin = new System.Windows.Forms.Label();
             this.lbl_perintah_input_user_pass = new System.Windows.Forms.Label();
             this.panel_masuk = new System.Windows.Forms.Panel();
@@ -41,12 +43,10 @@
             this.lbl_password = new System.Windows.Forms.Label();
             this.lbl_username = new System.Windows.Forms.Label();
             this.lbl_masuk_akun = new System.Windows.Forms.Label();
-            this.pictureBox_logo_laundry = new System.Windows.Forms.PictureBox();
-            this.btn_kembali = new Guna.UI2.WinForms.Guna2Button();
             this.panel_kiri.SuspendLayout();
             this.panel_gambar.SuspendLayout();
-            this.panel_masuk.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo_laundry)).BeginInit();
+            this.panel_masuk.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_kiri
@@ -69,11 +69,48 @@
             this.panel_gambar.Size = new System.Drawing.Size(504, 670);
             this.panel_gambar.TabIndex = 9;
             // 
+            // btn_kembali
+            // 
+            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_kembali.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.btn_kembali.BorderRadius = 10;
+            this.btn_kembali.BorderThickness = 5;
+            this.btn_kembali.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_kembali.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.btn_kembali.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 8, 8);
+            this.btn_kembali.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_kembali.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_kembali.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_kembali.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_kembali.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_kembali.Font = new System.Drawing.Font("Imprint MT Shadow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kembali.ForeColor = System.Drawing.Color.White;
+            this.btn_kembali.Location = new System.Drawing.Point(21, 614);
+            this.btn_kembali.Name = "btn_kembali";
+            this.btn_kembali.Padding = new System.Windows.Forms.Padding(5);
+            this.btn_kembali.PressedColor = System.Drawing.Color.Pink;
+            this.btn_kembali.Size = new System.Drawing.Size(146, 44);
+            this.btn_kembali.TabIndex = 7;
+            this.btn_kembali.Text = "Kembali";
+            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
+            // 
+            // pictureBox_logo_laundry
+            // 
+            this.pictureBox_logo_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox_logo_laundry.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_logo_laundry.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_logo_laundry.Image")));
+            this.pictureBox_logo_laundry.Location = new System.Drawing.Point(46, 21);
+            this.pictureBox_logo_laundry.Name = "pictureBox_logo_laundry";
+            this.pictureBox_logo_laundry.Size = new System.Drawing.Size(410, 568);
+            this.pictureBox_logo_laundry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_logo_laundry.TabIndex = 0;
+            this.pictureBox_logo_laundry.TabStop = false;
+            // 
             // lbl_hai_admin
             // 
-            this.lbl_hai_admin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_hai_admin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_hai_admin.AutoSize = true;
             this.lbl_hai_admin.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_hai_admin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -85,9 +122,7 @@
             // 
             // lbl_perintah_input_user_pass
             // 
-            this.lbl_perintah_input_user_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_perintah_input_user_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_perintah_input_user_pass.AutoSize = true;
             this.lbl_perintah_input_user_pass.Font = new System.Drawing.Font("Goudy Old Style", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_perintah_input_user_pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -99,9 +134,7 @@
             // 
             // panel_masuk
             // 
-            this.panel_masuk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_masuk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel_masuk.BackColor = System.Drawing.Color.LavenderBlush;
             this.panel_masuk.Controls.Add(this.checkBox_show_pass);
             this.panel_masuk.Controls.Add(this.btn_masuk);
@@ -116,9 +149,7 @@
             // 
             // checkBox_show_pass
             // 
-            this.checkBox_show_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox_show_pass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.checkBox_show_pass.AutoSize = true;
             this.checkBox_show_pass.Font = new System.Drawing.Font("Goudy Old Style", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_show_pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -132,9 +163,7 @@
             // 
             // btn_masuk
             // 
-            this.btn_masuk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_masuk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_masuk.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
             this.btn_masuk.BorderRadius = 10;
             this.btn_masuk.BorderThickness = 5;
@@ -159,9 +188,7 @@
             // 
             // txt_password
             // 
-            this.txt_password.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_password.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
             this.txt_password.BorderRadius = 10;
             this.txt_password.BorderThickness = 3;
@@ -187,9 +214,7 @@
             // 
             // txt_username
             // 
-            this.txt_username.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_username.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_username.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
             this.txt_username.BorderRadius = 10;
             this.txt_username.BorderThickness = 3;
@@ -215,9 +240,7 @@
             // 
             // lbl_password
             // 
-            this.lbl_password.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_password.AutoSize = true;
             this.lbl_password.Font = new System.Drawing.Font("Geometr415 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -229,9 +252,7 @@
             // 
             // lbl_username
             // 
-            this.lbl_username.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_username.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_username.AutoSize = true;
             this.lbl_username.Font = new System.Drawing.Font("Geometr415 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -243,9 +264,7 @@
             // 
             // lbl_masuk_akun
             // 
-            this.lbl_masuk_akun.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_masuk_akun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_masuk_akun.AutoSize = true;
             this.lbl_masuk_akun.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_masuk_akun.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -254,44 +273,6 @@
             this.lbl_masuk_akun.Size = new System.Drawing.Size(300, 57);
             this.lbl_masuk_akun.TabIndex = 6;
             this.lbl_masuk_akun.Text = "Masuk Akun";
-            // 
-            // pictureBox_logo_laundry
-            // 
-            this.pictureBox_logo_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pictureBox_logo_laundry.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_logo_laundry.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_logo_laundry.Image")));
-            this.pictureBox_logo_laundry.Location = new System.Drawing.Point(46, 21);
-            this.pictureBox_logo_laundry.Name = "pictureBox_logo_laundry";
-            this.pictureBox_logo_laundry.Size = new System.Drawing.Size(410, 568);
-            this.pictureBox_logo_laundry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_logo_laundry.TabIndex = 0;
-            this.pictureBox_logo_laundry.TabStop = false;
-            // 
-            // btn_kembali
-            // 
-            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_kembali.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.btn_kembali.BorderRadius = 10;
-            this.btn_kembali.BorderThickness = 5;
-            this.btn_kembali.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_kembali.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.btn_kembali.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 8, 8);
-            this.btn_kembali.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_kembali.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_kembali.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_kembali.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_kembali.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_kembali.Font = new System.Drawing.Font("Imprint MT Shadow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_kembali.ForeColor = System.Drawing.Color.White;
-            this.btn_kembali.Location = new System.Drawing.Point(21, 614);
-            this.btn_kembali.Name = "btn_kembali";
-            this.btn_kembali.Padding = new System.Windows.Forms.Padding(5);
-            this.btn_kembali.PressedColor = System.Drawing.Color.Pink;
-            this.btn_kembali.Size = new System.Drawing.Size(146, 44);
-            this.btn_kembali.TabIndex = 7;
-            this.btn_kembali.Text = "Kembali";
-            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
             // 
             // Masuk
             // 
@@ -310,9 +291,9 @@
             this.Load += new System.EventHandler(this.Masuk_Load);
             this.panel_kiri.ResumeLayout(false);
             this.panel_gambar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo_laundry)).EndInit();
             this.panel_masuk.ResumeLayout(false);
             this.panel_masuk.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo_laundry)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

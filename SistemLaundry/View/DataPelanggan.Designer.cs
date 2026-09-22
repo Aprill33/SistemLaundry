@@ -35,16 +35,6 @@
             this.panel_utama = new System.Windows.Forms.Panel();
             this.panel_konten = new System.Windows.Forms.Panel();
             this.panel_data_grid_view = new System.Windows.Forms.Panel();
-            this.lbl_slogan = new System.Windows.Forms.Label();
-            this.lbl_si_laundry = new System.Windows.Forms.Label();
-            this.dgv_pelanggan = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.panel_header = new System.Windows.Forms.Panel();
-            this.btn_keluar = new Guna.UI2.WinForms.Guna2Button();
-            this.label_data_pelanggan = new System.Windows.Forms.Label();
-            this.flowLayoutPanel_pencarian = new System.Windows.Forms.FlowLayoutPanel();
-            this.btn_edit = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_kembali = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_hapus = new Guna.UI2.WinForms.Guna2Button();
             this.panel_bawah = new System.Windows.Forms.Panel();
             this.ShadowPanel_input = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.txt_alamat = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,15 +45,24 @@
             this.lbl_nama_pelanggan = new System.Windows.Forms.Label();
             this.lbl_id_pelanggan = new System.Windows.Forms.Label();
             this.txt_id_pelanggan = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_hapus = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_kembali = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_edit = new Guna.UI2.WinForms.Guna2Button();
+            this.lbl_slogan = new System.Windows.Forms.Label();
+            this.lbl_si_laundry = new System.Windows.Forms.Label();
+            this.dgv_pelanggan = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.panel_header = new System.Windows.Forms.Panel();
+            this.label_data_pelanggan = new System.Windows.Forms.Label();
+            this.flowLayoutPanel_pencarian = new System.Windows.Forms.FlowLayoutPanel();
             this.txt_pencarian = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel_utama.SuspendLayout();
             this.panel_konten.SuspendLayout();
             this.panel_data_grid_view.SuspendLayout();
+            this.panel_bawah.SuspendLayout();
+            this.ShadowPanel_input.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pelanggan)).BeginInit();
             this.panel_header.SuspendLayout();
             this.flowLayoutPanel_pencarian.SuspendLayout();
-            this.panel_bawah.SuspendLayout();
-            this.ShadowPanel_input.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_utama
@@ -98,227 +97,6 @@
             this.panel_data_grid_view.Size = new System.Drawing.Size(1248, 584);
             this.panel_data_grid_view.TabIndex = 0;
             // 
-            // lbl_slogan
-            // 
-            this.lbl_slogan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_slogan.AutoSize = true;
-            this.lbl_slogan.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_slogan.Font = new System.Drawing.Font("Goudy Old Style", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_slogan.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_slogan.Location = new System.Drawing.Point(516, 50);
-            this.lbl_slogan.Name = "lbl_slogan";
-            this.lbl_slogan.Size = new System.Drawing.Size(224, 23);
-            this.lbl_slogan.TabIndex = 11;
-            this.lbl_slogan.Text = "Clean And Fresh Laundry";
-            // 
-            // lbl_si_laundry
-            // 
-            this.lbl_si_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_si_laundry.AutoSize = true;
-            this.lbl_si_laundry.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_si_laundry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.lbl_si_laundry.Location = new System.Drawing.Point(443, 3);
-            this.lbl_si_laundry.Name = "lbl_si_laundry";
-            this.lbl_si_laundry.Size = new System.Drawing.Size(355, 47);
-            this.lbl_si_laundry.TabIndex = 10;
-            this.lbl_si_laundry.Text = " Apriluxe Laundry";
-            // 
-            // dgv_pelanggan
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
-            this.dgv_pelanggan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_pelanggan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_pelanggan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgv_pelanggan.ColumnHeadersHeight = 40;
-            this.dgv_pelanggan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LavenderBlush;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_pelanggan.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_pelanggan.GridColor = System.Drawing.Color.HotPink;
-            this.dgv_pelanggan.Location = new System.Drawing.Point(31, 80);
-            this.dgv_pelanggan.Name = "dgv_pelanggan";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.HotPink;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_pelanggan.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgv_pelanggan.RowHeadersVisible = false;
-            this.dgv_pelanggan.RowHeadersWidth = 62;
-            this.dgv_pelanggan.RowTemplate.Height = 28;
-            this.dgv_pelanggan.Size = new System.Drawing.Size(1187, 258);
-            this.dgv_pelanggan.TabIndex = 2;
-            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.HotPink;
-            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgv_pelanggan.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_pelanggan.ThemeStyle.GridColor = System.Drawing.Color.HotPink;
-            this.dgv_pelanggan.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.HotPink;
-            this.dgv_pelanggan.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgv_pelanggan.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_pelanggan.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgv_pelanggan.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgv_pelanggan.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgv_pelanggan.ThemeStyle.ReadOnly = false;
-            this.dgv_pelanggan.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgv_pelanggan.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgv_pelanggan.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_pelanggan.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_pelanggan.ThemeStyle.RowsStyle.Height = 28;
-            this.dgv_pelanggan.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgv_pelanggan.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgv_pelanggan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pelanggan_CellClick);
-            // 
-            // panel_header
-            // 
-            this.panel_header.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel_header.Controls.Add(this.btn_keluar);
-            this.panel_header.Controls.Add(this.label_data_pelanggan);
-            this.panel_header.Controls.Add(this.flowLayoutPanel_pencarian);
-            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_header.Location = new System.Drawing.Point(0, 0);
-            this.panel_header.Name = "panel_header";
-            this.panel_header.Size = new System.Drawing.Size(1248, 86);
-            this.panel_header.TabIndex = 0;
-            // 
-            // btn_keluar
-            // 
-            this.btn_keluar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_keluar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_keluar.BorderColor = System.Drawing.Color.Maroon;
-            this.btn_keluar.BorderRadius = 5;
-            this.btn_keluar.BorderThickness = 2;
-            this.btn_keluar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_keluar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_keluar.FillColor = System.Drawing.Color.White;
-            this.btn_keluar.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.btn_keluar.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_keluar.Location = new System.Drawing.Point(1194, 12);
-            this.btn_keluar.Name = "btn_keluar";
-            this.btn_keluar.Size = new System.Drawing.Size(42, 43);
-            this.btn_keluar.TabIndex = 9;
-            this.btn_keluar.Text = "X";
-            this.btn_keluar.Click += new System.EventHandler(this.btn_keluar_Click);
-            // 
-            // label_data_pelanggan
-            // 
-            this.label_data_pelanggan.AutoSize = true;
-            this.label_data_pelanggan.Font = new System.Drawing.Font("Imprint MT Shadow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_data_pelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.label_data_pelanggan.Location = new System.Drawing.Point(12, 24);
-            this.label_data_pelanggan.Name = "label_data_pelanggan";
-            this.label_data_pelanggan.Size = new System.Drawing.Size(313, 33);
-            this.label_data_pelanggan.TabIndex = 1;
-            this.label_data_pelanggan.Text = "Kelola Data Pelanggan";
-            // 
-            // flowLayoutPanel_pencarian
-            // 
-            this.flowLayoutPanel_pencarian.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel_pencarian.Controls.Add(this.txt_pencarian);
-            this.flowLayoutPanel_pencarian.Location = new System.Drawing.Point(684, 12);
-            this.flowLayoutPanel_pencarian.Name = "flowLayoutPanel_pencarian";
-            this.flowLayoutPanel_pencarian.Padding = new System.Windows.Forms.Padding(15, 7, 5, 5);
-            this.flowLayoutPanel_pencarian.Size = new System.Drawing.Size(476, 67);
-            this.flowLayoutPanel_pencarian.TabIndex = 1;
-            // 
-            // btn_edit
-            // 
-            this.btn_edit.BorderColor = System.Drawing.Color.Tan;
-            this.btn_edit.BorderRadius = 5;
-            this.btn_edit.BorderThickness = 2;
-            this.btn_edit.CustomBorderColor = System.Drawing.Color.SaddleBrown;
-            this.btn_edit.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 4);
-            this.btn_edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_edit.FillColor = System.Drawing.Color.RosyBrown;
-            this.btn_edit.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit.ForeColor = System.Drawing.Color.White;
-            this.btn_edit.HoverState.BorderColor = System.Drawing.Color.DarkGoldenrod;
-            this.btn_edit.HoverState.FillColor = System.Drawing.Color.Thistle;
-            this.btn_edit.Location = new System.Drawing.Point(929, 13);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(137, 48);
-            this.btn_edit.TabIndex = 1;
-            this.btn_edit.Text = "Edit";
-            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
-            // 
-            // btn_kembali
-            // 
-            this.btn_kembali.BackColor = System.Drawing.Color.Transparent;
-            this.btn_kembali.BorderColor = System.Drawing.Color.RosyBrown;
-            this.btn_kembali.BorderRadius = 5;
-            this.btn_kembali.BorderThickness = 2;
-            this.btn_kembali.CustomBorderColor = System.Drawing.Color.SaddleBrown;
-            this.btn_kembali.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 4);
-            this.btn_kembali.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_kembali.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_kembali.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_kembali.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_kembali.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.btn_kembali.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_kembali.ForeColor = System.Drawing.Color.White;
-            this.btn_kembali.HoverState.BorderColor = System.Drawing.Color.DarkGoldenrod;
-            this.btn_kembali.HoverState.FillColor = System.Drawing.Color.LightPink;
-            this.btn_kembali.Location = new System.Drawing.Point(929, 182);
-            this.btn_kembali.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.btn_kembali.Name = "btn_kembali";
-            this.btn_kembali.Size = new System.Drawing.Size(137, 48);
-            this.btn_kembali.TabIndex = 4;
-            this.btn_kembali.Text = "Kembali";
-            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
-            // 
-            // btn_hapus
-            // 
-            this.btn_hapus.BorderColor = System.Drawing.Color.RosyBrown;
-            this.btn_hapus.BorderRadius = 5;
-            this.btn_hapus.BorderThickness = 2;
-            this.btn_hapus.CustomBorderColor = System.Drawing.Color.SaddleBrown;
-            this.btn_hapus.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 4);
-            this.btn_hapus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_hapus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_hapus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_hapus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_hapus.FillColor = System.Drawing.Color.Maroon;
-            this.btn_hapus.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hapus.ForeColor = System.Drawing.Color.White;
-            this.btn_hapus.HoverState.BorderColor = System.Drawing.Color.DarkGoldenrod;
-            this.btn_hapus.HoverState.FillColor = System.Drawing.Color.Brown;
-            this.btn_hapus.Location = new System.Drawing.Point(929, 101);
-            this.btn_hapus.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.btn_hapus.Name = "btn_hapus";
-            this.btn_hapus.Size = new System.Drawing.Size(137, 48);
-            this.btn_hapus.TabIndex = 2;
-            this.btn_hapus.Text = "Hapus";
-            this.btn_hapus.Click += new System.EventHandler(this.btn_hapus_Click);
-            // 
             // panel_bawah
             // 
             this.panel_bawah.Controls.Add(this.ShadowPanel_input);
@@ -333,9 +111,7 @@
             // 
             // ShadowPanel_input
             // 
-            this.ShadowPanel_input.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ShadowPanel_input.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ShadowPanel_input.BackColor = System.Drawing.Color.Transparent;
             this.ShadowPanel_input.Controls.Add(this.txt_alamat);
             this.ShadowPanel_input.Controls.Add(this.txt_no_hp);
@@ -492,6 +268,203 @@
             this.txt_id_pelanggan.Size = new System.Drawing.Size(235, 36);
             this.txt_id_pelanggan.TabIndex = 1;
             // 
+            // btn_hapus
+            // 
+            this.btn_hapus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_hapus.BorderColor = System.Drawing.Color.RosyBrown;
+            this.btn_hapus.BorderRadius = 5;
+            this.btn_hapus.BorderThickness = 2;
+            this.btn_hapus.CustomBorderColor = System.Drawing.Color.SaddleBrown;
+            this.btn_hapus.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 4);
+            this.btn_hapus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_hapus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_hapus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_hapus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_hapus.FillColor = System.Drawing.Color.Maroon;
+            this.btn_hapus.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hapus.ForeColor = System.Drawing.Color.White;
+            this.btn_hapus.HoverState.BorderColor = System.Drawing.Color.DarkGoldenrod;
+            this.btn_hapus.HoverState.FillColor = System.Drawing.Color.Brown;
+            this.btn_hapus.Location = new System.Drawing.Point(929, 101);
+            this.btn_hapus.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btn_hapus.Name = "btn_hapus";
+            this.btn_hapus.Size = new System.Drawing.Size(137, 48);
+            this.btn_hapus.TabIndex = 2;
+            this.btn_hapus.Text = "Hapus";
+            this.btn_hapus.Click += new System.EventHandler(this.btn_hapus_Click);
+            // 
+            // btn_kembali
+            // 
+            this.btn_kembali.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_kembali.BackColor = System.Drawing.Color.Transparent;
+            this.btn_kembali.BorderColor = System.Drawing.Color.RosyBrown;
+            this.btn_kembali.BorderRadius = 5;
+            this.btn_kembali.BorderThickness = 2;
+            this.btn_kembali.CustomBorderColor = System.Drawing.Color.SaddleBrown;
+            this.btn_kembali.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 4);
+            this.btn_kembali.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_kembali.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_kembali.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_kembali.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_kembali.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.btn_kembali.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kembali.ForeColor = System.Drawing.Color.White;
+            this.btn_kembali.HoverState.BorderColor = System.Drawing.Color.DarkGoldenrod;
+            this.btn_kembali.HoverState.FillColor = System.Drawing.Color.LightPink;
+            this.btn_kembali.Location = new System.Drawing.Point(929, 182);
+            this.btn_kembali.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btn_kembali.Name = "btn_kembali";
+            this.btn_kembali.Size = new System.Drawing.Size(137, 48);
+            this.btn_kembali.TabIndex = 4;
+            this.btn_kembali.Text = "Kembali";
+            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
+            // 
+            // btn_edit
+            // 
+            this.btn_edit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_edit.BorderColor = System.Drawing.Color.Tan;
+            this.btn_edit.BorderRadius = 5;
+            this.btn_edit.BorderThickness = 2;
+            this.btn_edit.CustomBorderColor = System.Drawing.Color.SaddleBrown;
+            this.btn_edit.CustomBorderThickness = new System.Windows.Forms.Padding(2, 2, 4, 4);
+            this.btn_edit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_edit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_edit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_edit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_edit.FillColor = System.Drawing.Color.RosyBrown;
+            this.btn_edit.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edit.ForeColor = System.Drawing.Color.White;
+            this.btn_edit.HoverState.BorderColor = System.Drawing.Color.DarkGoldenrod;
+            this.btn_edit.HoverState.FillColor = System.Drawing.Color.Thistle;
+            this.btn_edit.Location = new System.Drawing.Point(929, 13);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(137, 48);
+            this.btn_edit.TabIndex = 1;
+            this.btn_edit.Text = "Edit";
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
+            // 
+            // lbl_slogan
+            // 
+            this.lbl_slogan.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_slogan.AutoSize = true;
+            this.lbl_slogan.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_slogan.Font = new System.Drawing.Font("Goudy Old Style", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_slogan.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_slogan.Location = new System.Drawing.Point(516, 50);
+            this.lbl_slogan.Name = "lbl_slogan";
+            this.lbl_slogan.Size = new System.Drawing.Size(224, 23);
+            this.lbl_slogan.TabIndex = 11;
+            this.lbl_slogan.Text = "Clean And Fresh Laundry";
+            // 
+            // lbl_si_laundry
+            // 
+            this.lbl_si_laundry.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_si_laundry.AutoSize = true;
+            this.lbl_si_laundry.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_si_laundry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.lbl_si_laundry.Location = new System.Drawing.Point(443, 3);
+            this.lbl_si_laundry.Name = "lbl_si_laundry";
+            this.lbl_si_laundry.Size = new System.Drawing.Size(355, 47);
+            this.lbl_si_laundry.TabIndex = 10;
+            this.lbl_si_laundry.Text = " Apriluxe Laundry";
+            // 
+            // dgv_pelanggan
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
+            this.dgv_pelanggan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_pelanggan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_pelanggan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgv_pelanggan.ColumnHeadersHeight = 40;
+            this.dgv_pelanggan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_pelanggan.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_pelanggan.GridColor = System.Drawing.Color.HotPink;
+            this.dgv_pelanggan.Location = new System.Drawing.Point(31, 80);
+            this.dgv_pelanggan.Name = "dgv_pelanggan";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.HotPink;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_pelanggan.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgv_pelanggan.RowHeadersVisible = false;
+            this.dgv_pelanggan.RowHeadersWidth = 62;
+            this.dgv_pelanggan.RowTemplate.Height = 28;
+            this.dgv_pelanggan.Size = new System.Drawing.Size(1187, 258);
+            this.dgv_pelanggan.TabIndex = 2;
+            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.HotPink;
+            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgv_pelanggan.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgv_pelanggan.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_pelanggan.ThemeStyle.GridColor = System.Drawing.Color.HotPink;
+            this.dgv_pelanggan.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.HotPink;
+            this.dgv_pelanggan.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgv_pelanggan.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_pelanggan.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgv_pelanggan.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgv_pelanggan.ThemeStyle.HeaderStyle.Height = 40;
+            this.dgv_pelanggan.ThemeStyle.ReadOnly = false;
+            this.dgv_pelanggan.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgv_pelanggan.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgv_pelanggan.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_pelanggan.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_pelanggan.ThemeStyle.RowsStyle.Height = 28;
+            this.dgv_pelanggan.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgv_pelanggan.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgv_pelanggan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pelanggan_CellClick);
+            // 
+            // panel_header
+            // 
+            this.panel_header.BackColor = System.Drawing.Color.LavenderBlush;
+            this.panel_header.Controls.Add(this.label_data_pelanggan);
+            this.panel_header.Controls.Add(this.flowLayoutPanel_pencarian);
+            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel_header.Location = new System.Drawing.Point(0, 0);
+            this.panel_header.Name = "panel_header";
+            this.panel_header.Size = new System.Drawing.Size(1248, 86);
+            this.panel_header.TabIndex = 0;
+            // 
+            // label_data_pelanggan
+            // 
+            this.label_data_pelanggan.AutoSize = true;
+            this.label_data_pelanggan.Font = new System.Drawing.Font("Imprint MT Shadow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_data_pelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.label_data_pelanggan.Location = new System.Drawing.Point(12, 24);
+            this.label_data_pelanggan.Name = "label_data_pelanggan";
+            this.label_data_pelanggan.Size = new System.Drawing.Size(313, 33);
+            this.label_data_pelanggan.TabIndex = 1;
+            this.label_data_pelanggan.Text = "Kelola Data Pelanggan";
+            // 
+            // flowLayoutPanel_pencarian
+            // 
+            this.flowLayoutPanel_pencarian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel_pencarian.Controls.Add(this.txt_pencarian);
+            this.flowLayoutPanel_pencarian.Location = new System.Drawing.Point(760, 12);
+            this.flowLayoutPanel_pencarian.Name = "flowLayoutPanel_pencarian";
+            this.flowLayoutPanel_pencarian.Padding = new System.Windows.Forms.Padding(15, 7, 5, 5);
+            this.flowLayoutPanel_pencarian.Size = new System.Drawing.Size(476, 67);
+            this.flowLayoutPanel_pencarian.TabIndex = 1;
+            // 
             // txt_pencarian
             // 
             this.txt_pencarian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -535,13 +508,13 @@
             this.panel_konten.ResumeLayout(false);
             this.panel_data_grid_view.ResumeLayout(false);
             this.panel_data_grid_view.PerformLayout();
+            this.panel_bawah.ResumeLayout(false);
+            this.ShadowPanel_input.ResumeLayout(false);
+            this.ShadowPanel_input.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pelanggan)).EndInit();
             this.panel_header.ResumeLayout(false);
             this.panel_header.PerformLayout();
             this.flowLayoutPanel_pencarian.ResumeLayout(false);
-            this.panel_bawah.ResumeLayout(false);
-            this.ShadowPanel_input.ResumeLayout(false);
-            this.ShadowPanel_input.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -556,7 +529,6 @@
         private System.Windows.Forms.Panel panel_konten;
         private System.Windows.Forms.Panel panel_data_grid_view;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_pelanggan;
-        private Guna.UI2.WinForms.Guna2Button btn_keluar;
         private System.Windows.Forms.Label lbl_slogan;
         private System.Windows.Forms.Label lbl_si_laundry;
         private Guna.UI2.WinForms.Guna2Button btn_hapus;

@@ -16,7 +16,6 @@ namespace SistemLaundry.View
         LaundryController laundryController;
         LaundryController.ModeDetailTransaksi mode;
 
-
         public DetailTransaksi(
             string idTransaksi,
             LaundryController.ModeDetailTransaksi modeDetail
@@ -27,7 +26,7 @@ namespace SistemLaundry.View
             mode = modeDetail;
 
             AturReadOnly();
-            TampilkanData(idTransaksi); // 👈 METHOD DIPANGGIL DI SINI
+            TampilkanData(idTransaksi);
         }
 
         private void TampilkanData(string idTransaksi)
@@ -57,18 +56,9 @@ namespace SistemLaundry.View
             txt_total.Text =
                 row["total"].ToString();
 
-            if (mode == LaundryController.ModeDetailTransaksi.Admin)
-            {
-                txt_jumlah_uang.Text =
-                    row["uang_bayar"].ToString();
-                txt_Kembalian.Text =
-                    row["kembalian"].ToString();
-            }
-            else
-            {
-                txt_jumlah_uang.Text = "-";
-                txt_Kembalian.Text = "-";
-            }
+            // Ditampilkan langsung agar nilai jumlah uang & kembalian selalu muncul
+            txt_jumlah_uang.Text = row["uang_bayar"].ToString();
+            txt_Kembalian.Text = row["kembalian"].ToString();
 
             dgv_detail_transaksi.DataSource =
                 laundryController.GetDetailItemTransaksi(idTransaksi);
@@ -76,7 +66,6 @@ namespace SistemLaundry.View
 
         private void AturReadOnly()
         {
-            // Mengunci semua TextBox agar tidak bisa diedit
             txt_id_transaksi.ReadOnly = true;
             txt_nama_pelanggan.ReadOnly = true;
             txt_status_laundry.ReadOnly = true;
@@ -85,20 +74,32 @@ namespace SistemLaundry.View
             txt_jumlah_uang.ReadOnly = true;
             txt_Kembalian.ReadOnly = true;
 
-            // Mengunci DateTimePicker agar tidak bisa diklik/diubah
             dtp_tanggal_masuk.Enabled = false;
             dtp_estimasi_selesai.Enabled = false;
 
-            // Tambahan: Mengunci DataGridView agar tidak bisa diedit isinya secara manual
             dgv_detail_transaksi.ReadOnly = true;
             dgv_detail_transaksi.AllowUserToAddRows = false;
         }
-        
- 
 
         private void btn_Tutup_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void DetailTransaksi_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void lbl_total_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txt_jumlah_uang_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txt_Kembalian_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

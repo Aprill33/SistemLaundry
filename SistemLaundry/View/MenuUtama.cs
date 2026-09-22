@@ -33,6 +33,18 @@ namespace SistemLaundry.View
         private void btn_data_pelanggan_Click(object sender, EventArgs e)
         {
             DataPelanggan dataPelanggan = new DataPelanggan();
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                dataPelanggan.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                dataPelanggan.StartPosition = FormStartPosition.Manual;
+                dataPelanggan.Size = this.Size;
+                dataPelanggan.Location = this.Location;
+            }
+
             dataPelanggan.Show();
             this.Hide();
         }
@@ -40,6 +52,18 @@ namespace SistemLaundry.View
         private void btn_data_layanan_Click(object sender, EventArgs e)
         {
             DataLayanan dataLayanan = new DataLayanan();
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                dataLayanan.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                dataLayanan.StartPosition = FormStartPosition.Manual;
+                dataLayanan.Size = this.Size;
+                dataLayanan.Location = this.Location;
+            }
+
             dataLayanan.Show();
             this.Hide();
         }
@@ -47,6 +71,18 @@ namespace SistemLaundry.View
         private void btn_transaksi_Click(object sender, EventArgs e)
         {
             Transaksi transaksi = new Transaksi();
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                transaksi.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                transaksi.StartPosition = FormStartPosition.Manual;
+                transaksi.Size = this.Size;
+                transaksi.Location = this.Location;
+            }
+
             transaksi.Show();
             this.Hide();
         }
@@ -54,6 +90,18 @@ namespace SistemLaundry.View
         private void btn_manajemen_admin_Click(object sender, EventArgs e)
         {
             DataAdmin dataAdmin = new DataAdmin();
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                dataAdmin.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                dataAdmin.StartPosition = FormStartPosition.Manual;
+                dataAdmin.Size = this.Size;
+                dataAdmin.Location = this.Location;
+            }
+
             dataAdmin.Show();
             this.Hide();
         }
@@ -61,11 +109,11 @@ namespace SistemLaundry.View
         private void btn_keluar_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show(
-            "Apakah Anda yakin ingin keluar dari akun admin?",
-            "Konfirmasi Logout",
-            MessageBoxButtons.YesNo,
-            MessageBoxIcon.Question
-        );
+                "Apakah Anda yakin ingin keluar dari akun admin?",
+                "Konfirmasi Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
 
             if (result == DialogResult.Yes)
             {
@@ -75,8 +123,19 @@ namespace SistemLaundry.View
 
                 // kembali ke form login admin
                 Masuk loginAdmin = new Masuk();
-                loginAdmin.Show();
 
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    loginAdmin.WindowState = FormWindowState.Maximized;
+                }
+                else
+                {
+                    loginAdmin.StartPosition = FormStartPosition.Manual;
+                    loginAdmin.Size = this.Size;
+                    loginAdmin.Location = this.Location;
+                }
+
+                loginAdmin.Show();
                 this.Close(); // tutup MenuUtama
             }
         }

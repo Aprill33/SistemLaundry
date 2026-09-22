@@ -33,9 +33,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_header = new System.Windows.Forms.Panel();
-            this.btn_keluar = new Guna.UI2.WinForms.Guna2Button();
             this.lbl_transaksi = new System.Windows.Forms.Label();
             this.flowLayoutPanel_pencarian = new System.Windows.Forms.FlowLayoutPanel();
+            this.txt_pencarian = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel_bawah = new System.Windows.Forms.Panel();
             this.flowLayoutPanel_button = new System.Windows.Forms.FlowLayoutPanel();
             this.btn_kembali = new Guna.UI2.WinForms.Guna2Button();
@@ -45,7 +45,6 @@
             this.lbl_slogan = new System.Windows.Forms.Label();
             this.lbl_si_laundry = new System.Windows.Forms.Label();
             this.dgv_transaksi = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txt_pencarian = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel_header.SuspendLayout();
             this.flowLayoutPanel_pencarian.SuspendLayout();
             this.panel_bawah.SuspendLayout();
@@ -56,35 +55,15 @@
             // 
             // panel_header
             // 
+            this.panel_header.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_header.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel_header.Controls.Add(this.btn_keluar);
             this.panel_header.Controls.Add(this.lbl_transaksi);
             this.panel_header.Controls.Add(this.flowLayoutPanel_pencarian);
-            this.panel_header.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_header.Location = new System.Drawing.Point(0, 0);
             this.panel_header.Name = "panel_header";
             this.panel_header.Size = new System.Drawing.Size(1248, 79);
             this.panel_header.TabIndex = 0;
-            // 
-            // btn_keluar
-            // 
-            this.btn_keluar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_keluar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_keluar.BorderColor = System.Drawing.Color.Maroon;
-            this.btn_keluar.BorderRadius = 5;
-            this.btn_keluar.BorderThickness = 2;
-            this.btn_keluar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_keluar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_keluar.FillColor = System.Drawing.Color.White;
-            this.btn_keluar.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.btn_keluar.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_keluar.Location = new System.Drawing.Point(1194, 7);
-            this.btn_keluar.Name = "btn_keluar";
-            this.btn_keluar.Size = new System.Drawing.Size(42, 43);
-            this.btn_keluar.TabIndex = 10;
-            this.btn_keluar.Text = "X";
             // 
             // lbl_transaksi
             // 
@@ -99,17 +78,48 @@
             // 
             // flowLayoutPanel_pencarian
             // 
+            this.flowLayoutPanel_pencarian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel_pencarian.Controls.Add(this.txt_pencarian);
-            this.flowLayoutPanel_pencarian.Location = new System.Drawing.Point(695, 7);
+            this.flowLayoutPanel_pencarian.Location = new System.Drawing.Point(769, 6);
             this.flowLayoutPanel_pencarian.Name = "flowLayoutPanel_pencarian";
             this.flowLayoutPanel_pencarian.Padding = new System.Windows.Forms.Padding(15, 7, 5, 5);
             this.flowLayoutPanel_pencarian.Size = new System.Drawing.Size(476, 67);
             this.flowLayoutPanel_pencarian.TabIndex = 3;
             // 
+            // txt_pencarian
+            // 
+            this.txt_pencarian.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_pencarian.BorderRadius = 5;
+            this.txt_pencarian.BorderThickness = 2;
+            this.txt_pencarian.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_pencarian.DefaultText = "";
+            this.txt_pencarian.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_pencarian.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_pencarian.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_pencarian.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_pencarian.FillColor = System.Drawing.Color.LightPink;
+            this.txt_pencarian.FocusedState.BorderColor = System.Drawing.Color.RosyBrown;
+            this.txt_pencarian.FocusedState.FillColor = System.Drawing.Color.LightPink;
+            this.txt_pencarian.FocusedState.ForeColor = System.Drawing.Color.DimGray;
+            this.txt_pencarian.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_pencarian.ForeColor = System.Drawing.Color.White;
+            this.txt_pencarian.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.txt_pencarian.IconRight = global::SistemLaundry.Properties.Resources.search;
+            this.txt_pencarian.IconRightOffset = new System.Drawing.Point(20, 0);
+            this.txt_pencarian.IconRightSize = new System.Drawing.Size(25, 25);
+            this.txt_pencarian.Location = new System.Drawing.Point(19, 12);
+            this.txt_pencarian.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_pencarian.Name = "txt_pencarian";
+            this.txt_pencarian.PlaceholderText = "";
+            this.txt_pencarian.SelectedText = "";
+            this.txt_pencarian.Size = new System.Drawing.Size(431, 42);
+            this.txt_pencarian.TabIndex = 1;
+            this.txt_pencarian.TextChanged += new System.EventHandler(this.txt_pencarian_TextChanged);
+            // 
             // panel_bawah
             // 
+            this.panel_bawah.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel_bawah.Controls.Add(this.flowLayoutPanel_button);
-            this.panel_bawah.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_bawah.Location = new System.Drawing.Point(0, 527);
             this.panel_bawah.Name = "panel_bawah";
             this.panel_bawah.Size = new System.Drawing.Size(1248, 143);
@@ -117,11 +127,12 @@
             // 
             // flowLayoutPanel_button
             // 
+            this.flowLayoutPanel_button.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.flowLayoutPanel_button.BackColor = System.Drawing.Color.LavenderBlush;
             this.flowLayoutPanel_button.Controls.Add(this.btn_kembali);
             this.flowLayoutPanel_button.Controls.Add(this.btn_edit_status);
             this.flowLayoutPanel_button.Controls.Add(this.btn_detail_transaksi);
-            this.flowLayoutPanel_button.Location = new System.Drawing.Point(184, 27);
+            this.flowLayoutPanel_button.Location = new System.Drawing.Point(258, 31);
             this.flowLayoutPanel_button.Name = "flowLayoutPanel_button";
             this.flowLayoutPanel_button.Padding = new System.Windows.Forms.Padding(20, 20, 8, 8);
             this.flowLayoutPanel_button.Size = new System.Drawing.Size(714, 100);
@@ -202,10 +213,10 @@
             // 
             // panel_dgv_transaksi
             // 
+            this.panel_dgv_transaksi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel_dgv_transaksi.Controls.Add(this.lbl_slogan);
             this.panel_dgv_transaksi.Controls.Add(this.lbl_si_laundry);
             this.panel_dgv_transaksi.Controls.Add(this.dgv_transaksi);
-            this.panel_dgv_transaksi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_dgv_transaksi.Location = new System.Drawing.Point(0, 79);
             this.panel_dgv_transaksi.Name = "panel_dgv_transaksi";
             this.panel_dgv_transaksi.Size = new System.Drawing.Size(1248, 448);
@@ -213,8 +224,7 @@
             // 
             // lbl_slogan
             // 
-            this.lbl_slogan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.lbl_slogan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_slogan.AutoSize = true;
             this.lbl_slogan.BackColor = System.Drawing.Color.Transparent;
@@ -228,8 +238,7 @@
             // 
             // lbl_si_laundry
             // 
-            this.lbl_si_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.lbl_si_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbl_si_laundry.AutoSize = true;
             this.lbl_si_laundry.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,11 +248,15 @@
             this.lbl_si_laundry.Size = new System.Drawing.Size(323, 42);
             this.lbl_si_laundry.TabIndex = 8;
             this.lbl_si_laundry.Text = " Apriluxe Laundry";
+            this.lbl_si_laundry.Click += new System.EventHandler(this.lbl_si_laundry_Click);
             // 
             // dgv_transaksi
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gainsboro;
             this.dgv_transaksi.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_transaksi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.RosyBrown;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -301,35 +314,6 @@
             this.dgv_transaksi.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgv_transaksi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_transaksi_CellClick);
             // 
-            // txt_pencarian
-            // 
-            this.txt_pencarian.BorderRadius = 5;
-            this.txt_pencarian.BorderThickness = 2;
-            this.txt_pencarian.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_pencarian.DefaultText = "";
-            this.txt_pencarian.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_pencarian.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_pencarian.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_pencarian.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_pencarian.FillColor = System.Drawing.Color.LightPink;
-            this.txt_pencarian.FocusedState.BorderColor = System.Drawing.Color.RosyBrown;
-            this.txt_pencarian.FocusedState.FillColor = System.Drawing.Color.LightPink;
-            this.txt_pencarian.FocusedState.ForeColor = System.Drawing.Color.DimGray;
-            this.txt_pencarian.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txt_pencarian.ForeColor = System.Drawing.Color.White;
-            this.txt_pencarian.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.txt_pencarian.IconRight = global::SistemLaundry.Properties.Resources.search;
-            this.txt_pencarian.IconRightOffset = new System.Drawing.Point(20, 0);
-            this.txt_pencarian.IconRightSize = new System.Drawing.Size(25, 25);
-            this.txt_pencarian.Location = new System.Drawing.Point(19, 12);
-            this.txt_pencarian.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txt_pencarian.Name = "txt_pencarian";
-            this.txt_pencarian.PlaceholderText = "";
-            this.txt_pencarian.SelectedText = "";
-            this.txt_pencarian.Size = new System.Drawing.Size(431, 42);
-            this.txt_pencarian.TabIndex = 1;
-            this.txt_pencarian.TextChanged += new System.EventHandler(this.txt_pencarian_TextChanged);
-            // 
             // Transaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -361,7 +345,6 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_pencarian;
         public Guna.UI2.WinForms.Guna2TextBox txt_pencarian;
         private System.Windows.Forms.Label lbl_transaksi;
-        private Guna.UI2.WinForms.Guna2Button btn_keluar;
         private System.Windows.Forms.Panel panel_bawah;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_button;
         private System.Windows.Forms.Panel panel_dgv_transaksi;

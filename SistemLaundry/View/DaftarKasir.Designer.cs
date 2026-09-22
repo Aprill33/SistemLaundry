@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DaftarKasir));
             this.panel_kanan = new System.Windows.Forms.Panel();
+            this.btn_simpan = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox_logo_laundry = new System.Windows.Forms.PictureBox();
             this.panel_masuk = new System.Windows.Forms.Panel();
             this.checkBox_show_pass = new System.Windows.Forms.CheckBox();
@@ -40,7 +41,7 @@
             this.lbl_daftar_akun = new System.Windows.Forms.Label();
             this.lbl_perintah_input_user_pass = new System.Windows.Forms.Label();
             this.lbl_sbg_kasir = new System.Windows.Forms.Label();
-            this.btn_simpan = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_kembali = new Guna.UI2.WinForms.Guna2Button();
             this.panel_kanan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo_laundry)).BeginInit();
             this.panel_masuk.SuspendLayout();
@@ -48,19 +49,45 @@
             // 
             // panel_kanan
             // 
+            this.panel_kanan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_kanan.BackColor = System.Drawing.Color.LavenderBlush;
             this.panel_kanan.Controls.Add(this.btn_simpan);
             this.panel_kanan.Controls.Add(this.pictureBox_logo_laundry);
-            this.panel_kanan.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel_kanan.Location = new System.Drawing.Point(793, 0);
             this.panel_kanan.Name = "panel_kanan";
             this.panel_kanan.Size = new System.Drawing.Size(455, 670);
             this.panel_kanan.TabIndex = 0;
             // 
+            // btn_simpan
+            // 
+            this.btn_simpan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_simpan.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.btn_simpan.BorderRadius = 10;
+            this.btn_simpan.BorderThickness = 5;
+            this.btn_simpan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_simpan.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.btn_simpan.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 8, 8);
+            this.btn_simpan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_simpan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_simpan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_simpan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_simpan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_simpan.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_simpan.ForeColor = System.Drawing.Color.White;
+            this.btn_simpan.Location = new System.Drawing.Point(121, 507);
+            this.btn_simpan.Name = "btn_simpan";
+            this.btn_simpan.Padding = new System.Windows.Forms.Padding(5);
+            this.btn_simpan.PressedColor = System.Drawing.Color.Pink;
+            this.btn_simpan.Size = new System.Drawing.Size(214, 60);
+            this.btn_simpan.TabIndex = 7;
+            this.btn_simpan.Text = "Simpan";
+            this.btn_simpan.Click += new System.EventHandler(this.btn_simpan_Click);
+            // 
             // pictureBox_logo_laundry
             // 
-            this.pictureBox_logo_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox_logo_laundry.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox_logo_laundry.BackColor = System.Drawing.Color.White;
             this.pictureBox_logo_laundry.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_logo_laundry.Image")));
             this.pictureBox_logo_laundry.Location = new System.Drawing.Point(23, 12);
@@ -88,9 +115,7 @@
             // 
             // checkBox_show_pass
             // 
-            this.checkBox_show_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkBox_show_pass.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.checkBox_show_pass.AutoSize = true;
             this.checkBox_show_pass.Font = new System.Drawing.Font("Goudy Old Style", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_show_pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -103,9 +128,7 @@
             // 
             // txt_password
             // 
-            this.txt_password.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_password.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
             this.txt_password.BorderRadius = 10;
             this.txt_password.BorderThickness = 3;
@@ -131,9 +154,7 @@
             // 
             // txt_username
             // 
-            this.txt_username.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_username.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_username.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
             this.txt_username.BorderRadius = 10;
             this.txt_username.BorderThickness = 3;
@@ -159,9 +180,7 @@
             // 
             // lbl_password
             // 
-            this.lbl_password.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_password.AutoSize = true;
             this.lbl_password.Font = new System.Drawing.Font("Geometr415 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -173,9 +192,7 @@
             // 
             // lbl_username
             // 
-            this.lbl_username.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_username.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_username.AutoSize = true;
             this.lbl_username.Font = new System.Drawing.Font("Geometr415 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -187,9 +204,7 @@
             // 
             // lbl_daftar_akun
             // 
-            this.lbl_daftar_akun.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_daftar_akun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_daftar_akun.AutoSize = true;
             this.lbl_daftar_akun.Font = new System.Drawing.Font("Imprint MT Shadow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_daftar_akun.ForeColor = System.Drawing.Color.White;
@@ -201,9 +216,7 @@
             // 
             // lbl_perintah_input_user_pass
             // 
-            this.lbl_perintah_input_user_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_perintah_input_user_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_perintah_input_user_pass.AutoSize = true;
             this.lbl_perintah_input_user_pass.Font = new System.Drawing.Font("Goudy Old Style", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_perintah_input_user_pass.ForeColor = System.Drawing.Color.White;
@@ -215,9 +228,7 @@
             // 
             // lbl_sbg_kasir
             // 
-            this.lbl_sbg_kasir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_sbg_kasir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbl_sbg_kasir.AutoSize = true;
             this.lbl_sbg_kasir.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_sbg_kasir.ForeColor = System.Drawing.Color.White;
@@ -227,32 +238,29 @@
             this.lbl_sbg_kasir.TabIndex = 10;
             this.lbl_sbg_kasir.Text = "Sebagai Kasir";
             // 
-            // btn_simpan
+            // btn_kembali
             // 
-            this.btn_simpan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_simpan.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.btn_simpan.BorderRadius = 10;
-            this.btn_simpan.BorderThickness = 5;
-            this.btn_simpan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_simpan.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.btn_simpan.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 8, 8);
-            this.btn_simpan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_simpan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_simpan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_simpan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_simpan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btn_simpan.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_simpan.ForeColor = System.Drawing.Color.White;
-            this.btn_simpan.Location = new System.Drawing.Point(121, 507);
-            this.btn_simpan.Name = "btn_simpan";
-            this.btn_simpan.Padding = new System.Windows.Forms.Padding(5);
-            this.btn_simpan.PressedColor = System.Drawing.Color.Pink;
-            this.btn_simpan.Size = new System.Drawing.Size(214, 60);
-            this.btn_simpan.TabIndex = 7;
-            this.btn_simpan.Text = "Simpan";
-            this.btn_simpan.Click += new System.EventHandler(this.btn_simpan_Click);
+            this.btn_kembali.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.btn_kembali.BorderRadius = 10;
+            this.btn_kembali.BorderThickness = 5;
+            this.btn_kembali.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_kembali.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            this.btn_kembali.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 8, 8);
+            this.btn_kembali.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_kembali.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_kembali.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_kembali.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_kembali.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btn_kembali.Font = new System.Drawing.Font("Imprint MT Shadow", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_kembali.ForeColor = System.Drawing.Color.White;
+            this.btn_kembali.Location = new System.Drawing.Point(12, 12);
+            this.btn_kembali.Name = "btn_kembali";
+            this.btn_kembali.Padding = new System.Windows.Forms.Padding(5);
+            this.btn_kembali.PressedColor = System.Drawing.Color.Pink;
+            this.btn_kembali.Size = new System.Drawing.Size(146, 44);
+            this.btn_kembali.TabIndex = 13;
+            this.btn_kembali.Text = "Kembali";
+            this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
             // 
             // DaftarKasir
             // 
@@ -260,6 +268,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1248, 670);
+            this.Controls.Add(this.btn_kembali);
             this.Controls.Add(this.lbl_daftar_akun);
             this.Controls.Add(this.lbl_perintah_input_user_pass);
             this.Controls.Add(this.lbl_sbg_kasir);
@@ -268,6 +277,7 @@
             this.Name = "DaftarKasir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DaftarKasir";
+            this.Load += new System.EventHandler(this.DaftarKasir_Load);
             this.panel_kanan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo_laundry)).EndInit();
             this.panel_masuk.ResumeLayout(false);
@@ -291,5 +301,6 @@
         private System.Windows.Forms.Label lbl_perintah_input_user_pass;
         private System.Windows.Forms.Label lbl_sbg_kasir;
         private Guna.UI2.WinForms.Guna2Button btn_simpan;
+        private Guna.UI2.WinForms.Guna2Button btn_kembali;
     }
 }

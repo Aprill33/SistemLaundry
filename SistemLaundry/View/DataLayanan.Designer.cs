@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel_atas = new System.Windows.Forms.Panel();
-            this.btn_keluar = new Guna.UI2.WinForms.Guna2Button();
             this.label_data_layanan = new System.Windows.Forms.Label();
             this.flowLayoutPanel_pencarian = new System.Windows.Forms.FlowLayoutPanel();
             this.txt_pencarian = new Guna.UI2.WinForms.Guna2TextBox();
@@ -71,7 +70,6 @@
             // panel_atas
             // 
             this.panel_atas.BackColor = System.Drawing.Color.LavenderBlush;
-            this.panel_atas.Controls.Add(this.btn_keluar);
             this.panel_atas.Controls.Add(this.label_data_layanan);
             this.panel_atas.Controls.Add(this.flowLayoutPanel_pencarian);
             this.panel_atas.Dock = System.Windows.Forms.DockStyle.Top;
@@ -79,26 +77,6 @@
             this.panel_atas.Name = "panel_atas";
             this.panel_atas.Size = new System.Drawing.Size(1248, 79);
             this.panel_atas.TabIndex = 0;
-            // 
-            // btn_keluar
-            // 
-            this.btn_keluar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_keluar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_keluar.BorderColor = System.Drawing.Color.Maroon;
-            this.btn_keluar.BorderRadius = 5;
-            this.btn_keluar.BorderThickness = 2;
-            this.btn_keluar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_keluar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_keluar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_keluar.FillColor = System.Drawing.Color.White;
-            this.btn_keluar.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Bold);
-            this.btn_keluar.ForeColor = System.Drawing.Color.Maroon;
-            this.btn_keluar.Location = new System.Drawing.Point(1194, 6);
-            this.btn_keluar.Name = "btn_keluar";
-            this.btn_keluar.Size = new System.Drawing.Size(45, 44);
-            this.btn_keluar.TabIndex = 10;
-            this.btn_keluar.Text = "X";
             // 
             // label_data_layanan
             // 
@@ -115,11 +93,12 @@
             // 
             this.flowLayoutPanel_pencarian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanel_pencarian.Controls.Add(this.txt_pencarian);
-            this.flowLayoutPanel_pencarian.Location = new System.Drawing.Point(691, 6);
+            this.flowLayoutPanel_pencarian.Location = new System.Drawing.Point(760, 6);
             this.flowLayoutPanel_pencarian.Name = "flowLayoutPanel_pencarian";
             this.flowLayoutPanel_pencarian.Padding = new System.Windows.Forms.Padding(15, 7, 5, 5);
             this.flowLayoutPanel_pencarian.Size = new System.Drawing.Size(476, 67);
             this.flowLayoutPanel_pencarian.TabIndex = 2;
+            this.flowLayoutPanel_pencarian.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel_pencarian_Paint);
             // 
             // txt_pencarian
             // 
@@ -275,9 +254,7 @@
             // 
             // ShadowPanel_input
             // 
-            this.ShadowPanel_input.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ShadowPanel_input.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ShadowPanel_input.BackColor = System.Drawing.Color.Transparent;
             this.ShadowPanel_input.Controls.Add(this.cbx_jenis_layanan);
             this.ShadowPanel_input.Controls.Add(this.btn_upload);
@@ -300,6 +277,7 @@
             // 
             // cbx_jenis_layanan
             // 
+            this.cbx_jenis_layanan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbx_jenis_layanan.BackColor = System.Drawing.Color.Pink;
             this.cbx_jenis_layanan.ForeColor = System.Drawing.Color.DimGray;
             this.cbx_jenis_layanan.FormattingEnabled = true;
@@ -310,6 +288,7 @@
             // 
             // btn_upload
             // 
+            this.btn_upload.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_upload.BorderColor = System.Drawing.Color.RosyBrown;
             this.btn_upload.BorderRadius = 5;
             this.btn_upload.BorderThickness = 2;
@@ -334,6 +313,7 @@
             // 
             // pictureBox_foto_layanan
             // 
+            this.pictureBox_foto_layanan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox_foto_layanan.BackColor = System.Drawing.Color.LightPink;
             this.pictureBox_foto_layanan.ErrorImage = null;
             this.pictureBox_foto_layanan.Location = new System.Drawing.Point(659, 31);
@@ -345,6 +325,7 @@
             // 
             // txt_estimasi_selesai
             // 
+            this.txt_estimasi_selesai.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_estimasi_selesai.BorderRadius = 5;
             this.txt_estimasi_selesai.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_estimasi_selesai.DefaultText = "";
@@ -368,6 +349,7 @@
             // 
             // txt_harga
             // 
+            this.txt_harga.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_harga.BorderRadius = 5;
             this.txt_harga.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_harga.DefaultText = "";
@@ -391,6 +373,7 @@
             // 
             // txt_nama_layanan
             // 
+            this.txt_nama_layanan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nama_layanan.BorderRadius = 5;
             this.txt_nama_layanan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_nama_layanan.DefaultText = "";
@@ -414,6 +397,7 @@
             // 
             // txt_id_layanan
             // 
+            this.txt_id_layanan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_id_layanan.BorderRadius = 5;
             this.txt_id_layanan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_id_layanan.DefaultText = "";
@@ -437,6 +421,7 @@
             // 
             // lbl_jenis_layanan
             // 
+            this.lbl_jenis_layanan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_jenis_layanan.AutoSize = true;
             this.lbl_jenis_layanan.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_jenis_layanan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -449,6 +434,7 @@
             // 
             // lbl_harga
             // 
+            this.lbl_harga.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_harga.AutoSize = true;
             this.lbl_harga.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_harga.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -461,6 +447,7 @@
             // 
             // lbl_nama_layanan
             // 
+            this.lbl_nama_layanan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_nama_layanan.AutoSize = true;
             this.lbl_nama_layanan.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nama_layanan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -473,6 +460,7 @@
             // 
             // lbl_estimasi_selesai
             // 
+            this.lbl_estimasi_selesai.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_estimasi_selesai.AutoSize = true;
             this.lbl_estimasi_selesai.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_estimasi_selesai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -485,6 +473,7 @@
             // 
             // lbl_id_layanan
             // 
+            this.lbl_id_layanan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_id_layanan.AutoSize = true;
             this.lbl_id_layanan.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_id_layanan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -507,40 +496,40 @@
             // 
             // dgv_layanan
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_layanan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dgv_layanan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgv_layanan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.RosyBrown;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightCoral;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_layanan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.RosyBrown;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.LightCoral;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_layanan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgv_layanan.ColumnHeadersHeight = 35;
             this.dgv_layanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.LavenderBlush;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_layanan.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.LavenderBlush;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_layanan.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgv_layanan.GridColor = System.Drawing.Color.HotPink;
             this.dgv_layanan.Location = new System.Drawing.Point(32, 6);
             this.dgv_layanan.Name = "dgv_layanan";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.HotPink;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_layanan.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.HotPink;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_layanan.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgv_layanan.RowHeadersVisible = false;
             this.dgv_layanan.RowHeadersWidth = 62;
             this.dgv_layanan.RowTemplate.Height = 28;
@@ -622,6 +611,5 @@
         private Guna.UI2.WinForms.Guna2Button btn_hapus;
         private Guna.UI2.WinForms.Guna2Button btn_kembali;
         private System.Windows.Forms.ComboBox cbx_jenis_layanan;
-        private Guna.UI2.WinForms.Guna2Button btn_keluar;
     }
 }

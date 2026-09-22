@@ -15,9 +15,23 @@ namespace SistemLaundry.View
             laundryController = new LaundryController();
             validation = new ValidationController();
         }
+
         private void btn_kembali_Click(object sender, EventArgs e)
         {
             MenuKasir menuKasir = new MenuKasir();
+
+            // Menyamakan ukuran & status layar dengan form aktif saat ini
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                menuKasir.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                menuKasir.StartPosition = FormStartPosition.Manual;
+                menuKasir.Size = this.Size;
+                menuKasir.Location = this.Location;
+            }
+
             menuKasir.Show();
             this.Close();
         }
@@ -35,7 +49,7 @@ namespace SistemLaundry.View
                 nama,
                 notelp,
                 alamat,
-                isEdit: false // FALSE karena TAMBAH DATA
+                isEdit: false
             );
 
             if (!valid) return;
@@ -61,6 +75,16 @@ namespace SistemLaundry.View
                 MessageBox.Show("Gagal menambahkan pelanggan",
                     "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void txt_id_pelanggan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TambahPelanggan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

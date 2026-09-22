@@ -73,9 +73,7 @@
             // 
             // lbl_slogan
             // 
-            this.lbl_slogan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_slogan.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_slogan.AutoSize = true;
             this.lbl_slogan.BackColor = System.Drawing.Color.Transparent;
             this.lbl_slogan.Font = new System.Drawing.Font("Goudy Old Style", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,9 +86,7 @@
             // 
             // lbl_si_laundry
             // 
-            this.lbl_si_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_si_laundry.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbl_si_laundry.AutoSize = true;
             this.lbl_si_laundry.Font = new System.Drawing.Font("Imprint MT Shadow", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_si_laundry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -102,9 +98,7 @@
             // 
             // ShadowPanel_input
             // 
-            this.ShadowPanel_input.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ShadowPanel_input.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ShadowPanel_input.BackColor = System.Drawing.Color.Transparent;
             this.ShadowPanel_input.Controls.Add(this.txt_alamat);
             this.ShadowPanel_input.Controls.Add(this.txt_no_hp);
@@ -123,6 +117,7 @@
             // 
             // txt_alamat
             // 
+            this.txt_alamat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_alamat.BorderRadius = 5;
             this.txt_alamat.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_alamat.DefaultText = "";
@@ -146,6 +141,7 @@
             // 
             // txt_no_hp
             // 
+            this.txt_no_hp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_no_hp.BorderRadius = 5;
             this.txt_no_hp.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_no_hp.DefaultText = "";
@@ -169,6 +165,7 @@
             // 
             // lbl_alamat
             // 
+            this.lbl_alamat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_alamat.AutoSize = true;
             this.lbl_alamat.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_alamat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -181,6 +178,7 @@
             // 
             // lbl_no_hp
             // 
+            this.lbl_no_hp.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_no_hp.AutoSize = true;
             this.lbl_no_hp.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_no_hp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -193,6 +191,7 @@
             // 
             // txt_nama_pelanggan
             // 
+            this.txt_nama_pelanggan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_nama_pelanggan.BorderRadius = 5;
             this.txt_nama_pelanggan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_nama_pelanggan.DefaultText = "";
@@ -216,6 +215,7 @@
             // 
             // lbl_nama_pelanggan
             // 
+            this.lbl_nama_pelanggan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_nama_pelanggan.AutoSize = true;
             this.lbl_nama_pelanggan.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_nama_pelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -228,6 +228,7 @@
             // 
             // lbl_id_pelanggan
             // 
+            this.lbl_id_pelanggan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_id_pelanggan.AutoSize = true;
             this.lbl_id_pelanggan.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_id_pelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -240,6 +241,7 @@
             // 
             // txt_id_pelanggan
             // 
+            this.txt_id_pelanggan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_id_pelanggan.BorderRadius = 5;
             this.txt_id_pelanggan.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_id_pelanggan.DefaultText = "";
@@ -260,12 +262,11 @@
             this.txt_id_pelanggan.SelectedText = "";
             this.txt_id_pelanggan.Size = new System.Drawing.Size(235, 36);
             this.txt_id_pelanggan.TabIndex = 1;
+            this.txt_id_pelanggan.TextChanged += new System.EventHandler(this.txt_id_pelanggan_TextChanged);
             // 
             // btn_simpan
             // 
-            this.btn_simpan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_simpan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_simpan.BorderColor = System.Drawing.Color.RosyBrown;
             this.btn_simpan.BorderRadius = 5;
             this.btn_simpan.BorderThickness = 2;
@@ -289,9 +290,7 @@
             // 
             // btn_kembali
             // 
-            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_kembali.BorderColor = System.Drawing.Color.RosyBrown;
             this.btn_kembali.BorderRadius = 5;
             this.btn_kembali.BorderThickness = 2;
@@ -328,6 +327,7 @@
             this.Name = "TambahPelanggan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TambahPelanggan";
+            this.Load += new System.EventHandler(this.TambahPelanggan_Load);
             this.panel_atas.ResumeLayout(false);
             this.panel_atas.PerformLayout();
             this.ShadowPanel_input.ResumeLayout(false);

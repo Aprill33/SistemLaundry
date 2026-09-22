@@ -8,29 +8,27 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Guna.UI2.AnimatorNS;                                     // Library tambahan dari Guna UI (dipakai untuk animasi / UI modern)
-using SistemLaundry.Controller;                                // Supaya Form bisa memanggil class Controller 
+using Guna.UI2.AnimatorNS;
+using SistemLaundry.Controller;
 
 namespace SistemLaundry.View
 {
     public partial class Masuk : Form
     {
-        // Deklarasi objek controller (BELUM dibuat, baru disiapkan)
-        LaundryController laundryController;                    // Dipakai untuk komunikasi ke database (login)
-        ValidationController validationController;              // Dipakai untuk mengecek validasi username & password
+        LaundryController laundryController;
+        ValidationController validationController;
 
-        // Constructor akan dijalankan PERTAMA KALI saat Form Masuk dibuka
         public Masuk()
         {
             InitializeComponent();
-            laundryController = new LaundryController();        // Membuat objek controller database
-            validationController = new ValidationController();  // Membuat objek controller validasi
-            txt_password.UseSystemPasswordChar = true;          // membuat password jadi tertutupi
+            laundryController = new LaundryController();
+            validationController = new ValidationController();
+            txt_password.UseSystemPasswordChar = true;
         }
 
         private void Masuk_Load(object sender, EventArgs e)
         {
-            txt_username.MaxLength = 6; 
+            txt_username.MaxLength = 6;
             txt_password.MaxLength = 6;
         }
 
@@ -47,13 +45,26 @@ namespace SistemLaundry.View
             if (laundryController.LoginAdmin(username, password))
             {
                 // Set session admin
-                LaundryController.KasirAktif = username;  // username admin disimpan
-                LaundryController.RoleAktif = "admin";     // role admin
+                LaundryController.KasirAktif = username;
+                LaundryController.RoleAktif = "admin";
 
                 MessageBox.Show("Login admin berhasil");
 
                 // Buka MenuUtama (admin)
                 MenuUtama mu = new MenuUtama();
+
+                // Menyesuaikan ukuran layar (Maximized atau Normal)
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    mu.WindowState = FormWindowState.Maximized;
+                }
+                else
+                {
+                    mu.StartPosition = FormStartPosition.Manual;
+                    mu.Size = this.Size;
+                    mu.Location = this.Location;
+                }
+
                 mu.Show();
 
                 // Tutup form login
@@ -77,6 +88,19 @@ namespace SistemLaundry.View
         private void btn_kembali_Click(object sender, EventArgs e)
         {
             AwalProgram awalProgram = new AwalProgram();
+
+            // Menyesuaikan ukuran layar (Maximized atau Normal)
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                awalProgram.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                awalProgram.StartPosition = FormStartPosition.Manual;
+                awalProgram.Size = this.Size;
+                awalProgram.Location = this.Location;
+            }
+
             awalProgram.Show();
             this.Hide();
         }

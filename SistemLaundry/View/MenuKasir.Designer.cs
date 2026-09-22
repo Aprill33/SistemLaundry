@@ -54,11 +54,11 @@
             // 
             // flowLayoutPanel_button
             // 
+            this.flowLayoutPanel_button.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.flowLayoutPanel_button.AutoScroll = true;
             this.flowLayoutPanel_button.Controls.Add(this.btn_tambah_pelanggan);
             this.flowLayoutPanel_button.Controls.Add(this.btn_tambah_transaksi);
             this.flowLayoutPanel_button.Controls.Add(this.btn_keluar);
-            this.flowLayoutPanel_button.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel_button.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel_button.Location = new System.Drawing.Point(0, 247);
             this.flowLayoutPanel_button.Name = "flowLayoutPanel_button";
@@ -69,7 +69,7 @@
             // 
             // btn_tambah_pelanggan
             // 
-            this.btn_tambah_pelanggan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_tambah_pelanggan.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_tambah_pelanggan.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_tambah_pelanggan.BorderRadius = 10;
             this.btn_tambah_pelanggan.BorderThickness = 2;
@@ -83,14 +83,14 @@
             this.btn_tambah_pelanggan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
             this.btn_tambah_pelanggan.Image = global::SistemLaundry.Properties.Resources.add_user;
             this.btn_tambah_pelanggan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_tambah_pelanggan.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_tambah_pelanggan.Location = new System.Drawing.Point(25, 25);
+            this.btn_tambah_pelanggan.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_tambah_pelanggan.Location = new System.Drawing.Point(29, 25);
             this.btn_tambah_pelanggan.Margin = new System.Windows.Forms.Padding(5);
             this.btn_tambah_pelanggan.Name = "btn_tambah_pelanggan";
             this.btn_tambah_pelanggan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_tambah_pelanggan.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_tambah_pelanggan.PressedDepth = 20;
-            this.btn_tambah_pelanggan.Size = new System.Drawing.Size(375, 84);
+            this.btn_tambah_pelanggan.Size = new System.Drawing.Size(325, 56);
             this.btn_tambah_pelanggan.TabIndex = 8;
             this.btn_tambah_pelanggan.Text = " Tambah Pelanggan";
             this.btn_tambah_pelanggan.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -98,7 +98,7 @@
             // 
             // btn_tambah_transaksi
             // 
-            this.btn_tambah_transaksi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_tambah_transaksi.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_tambah_transaksi.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_tambah_transaksi.BorderRadius = 10;
             this.btn_tambah_transaksi.BorderThickness = 2;
@@ -112,14 +112,14 @@
             this.btn_tambah_transaksi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
             this.btn_tambah_transaksi.Image = global::SistemLaundry.Properties.Resources.transaction_history__1_;
             this.btn_tambah_transaksi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_tambah_transaksi.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_tambah_transaksi.Location = new System.Drawing.Point(25, 119);
+            this.btn_tambah_transaksi.ImageSize = new System.Drawing.Size(25, 25);
+            this.btn_tambah_transaksi.Location = new System.Drawing.Point(28, 91);
             this.btn_tambah_transaksi.Margin = new System.Windows.Forms.Padding(5);
             this.btn_tambah_transaksi.Name = "btn_tambah_transaksi";
             this.btn_tambah_transaksi.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_tambah_transaksi.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_tambah_transaksi.PressedDepth = 20;
-            this.btn_tambah_transaksi.Size = new System.Drawing.Size(375, 84);
+            this.btn_tambah_transaksi.Size = new System.Drawing.Size(326, 59);
             this.btn_tambah_transaksi.TabIndex = 7;
             this.btn_tambah_transaksi.Text = "Tambah Transaksi";
             this.btn_tambah_transaksi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -127,7 +127,7 @@
             // 
             // btn_keluar
             // 
-            this.btn_keluar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_keluar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btn_keluar.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btn_keluar.BorderRadius = 10;
             this.btn_keluar.BorderThickness = 2;
@@ -139,16 +139,15 @@
             this.btn_keluar.FillColor = System.Drawing.Color.LavenderBlush;
             this.btn_keluar.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_keluar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
-            this.btn_keluar.Image = global::SistemLaundry.Properties.Resources.transaction_history__1_;
-            this.btn_keluar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_keluar.ImageSize = new System.Drawing.Size(35, 35);
-            this.btn_keluar.Location = new System.Drawing.Point(25, 318);
-            this.btn_keluar.Margin = new System.Windows.Forms.Padding(5, 110, 5, 10);
+            this.btn_keluar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_keluar.ImageSize = new System.Drawing.Size(25, 35);
+            this.btn_keluar.Location = new System.Drawing.Point(25, 255);
+            this.btn_keluar.Margin = new System.Windows.Forms.Padding(5, 100, 5, 10);
             this.btn_keluar.Name = "btn_keluar";
             this.btn_keluar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_keluar.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btn_keluar.PressedDepth = 20;
-            this.btn_keluar.Size = new System.Drawing.Size(375, 84);
+            this.btn_keluar.Size = new System.Drawing.Size(333, 68);
             this.btn_keluar.TabIndex = 8;
             this.btn_keluar.Text = "Keluar";
             this.btn_keluar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;

@@ -9,8 +9,6 @@ using System.Windows.Forms;
 using MySqlConnector;
 using System.Drawing;
 using SistemLaundry.View;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-// WAJIB
 
 namespace SistemLaundry.Controller
 {
@@ -60,11 +58,12 @@ namespace SistemLaundry.Controller
 
                 object result = cmd.ExecuteScalar();
 
-                if (result == null) return 0;           // username/password salah
-                if (result.ToString() == "nonaktif") return 2; // belum aktif
-                return 1;                               // aktif & boleh login
+                if (result == null) return 0;            // username/password salah
+                if (result.ToString() == "nonaktif") return 2; // belum aktif (gagal login)
+                return 1;                                // aktif & boleh login
             }
         }
+
         public bool DaftarKasir(string username, string password)
         {
             using (MySqlConnection conn = GetConn())
@@ -255,8 +254,6 @@ namespace SistemLaundry.Controller
                 cmd = new MySqlCommand(query, GetConn());
                 da = new MySqlDataAdapter(cmd);
                 da.Fill(data);
-
-               
             }
             catch (Exception ex)
             {
@@ -409,9 +406,9 @@ namespace SistemLaundry.Controller
             DataTable dt = new DataTable();
             try
             {
-                using (MySqlConnection conn = GetConn()) // GetConn() harus dipastikan membuka koneksi
+                using (MySqlConnection conn = GetConn())
                 {
-                    if (conn.State == ConnectionState.Closed) conn.Open(); // Tambahkan ini
+                    if (conn.State == ConnectionState.Closed) conn.Open();
 
                     string query = "SELECT * FROM transaksi";
                     using (MySqlDataAdapter da = new MySqlDataAdapter(query, conn))
@@ -440,7 +437,7 @@ namespace SistemLaundry.Controller
                         t.status_pembayaran
                      FROM transaksi t
                      JOIN pelanggan p 
-                        ON t.id_pelanggan = p.id_pelanggan
+                       ON t.id_pelanggan = p.id_pelanggan
                      WHERE CONCAT(
                         t.id_transaksi,
                         p.nama_pelanggan,
@@ -605,14 +602,14 @@ namespace SistemLaundry.Controller
                 using (MySqlConnection conn = GetConn())
                 {
                     string query = @"SELECT 
-                                l.nama_layanan,
-                                d.harga,
-                                d.jumlah,
-                                d.subtotal
-                             FROM detail_transaksi d
-                             JOIN layanan l 
-                                ON d.id_layanan = l.id_layanan
-                             WHERE d.id_transaksi = @id";
+                            l.nama_layanan,
+                            d.harga,
+                            d.jumlah,
+                            d.subtotal
+                           FROM detail_transaksi d
+                           JOIN layanan l 
+                             ON d.id_layanan = l.id_layanan
+                           WHERE d.id_transaksi = @id";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
@@ -673,11 +670,10 @@ namespace SistemLaundry.Controller
                 {
                     if (conn.State == ConnectionState.Closed) conn.Open();
 
-                    // Query JOIN dengan filter WHERE agar hanya mengambil 1 ID yang sedang dibuka
                     string query = @"SELECT t.*, p.nama_pelanggan 
-                             FROM transaksi t 
-                             JOIN pelanggan p ON t.id_pelanggan = p.id_pelanggan 
-                             WHERE t.id_transaksi = @id";
+                           FROM transaksi t 
+                           JOIN pelanggan p ON t.id_pelanggan = p.id_pelanggan 
+                           WHERE t.id_transaksi = @id";
 
                     using (MySqlCommand cmdLengkap = new MySqlCommand(query, conn))
                     {
@@ -705,9 +701,10 @@ namespace SistemLaundry.Controller
             {
                 using (MySqlConnection conn = GetConn())
                 {
-                    string query = @"SELECT id_admin, username, ROLE, STATUS 
-                             FROM manajemen_admin_kasir
-                             ORDER BY id_admin ASC";
+                    // TAMBAHKAN kolom PASSWORD di sini
+                    string query = @"SELECT id_admin, username, PASSWORD, ROLE, STATUS 
+                   FROM manajemen_admin_kasir
+                   ORDER BY id_admin ASC";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     using (MySqlDataAdapter da = new MySqlDataAdapter(cmd))
@@ -746,6 +743,33 @@ namespace SistemLaundry.Controller
             catch (Exception ex)
             {
                 MessageBox.Show("Gagal mengaktifkan admin:\n" + ex.Message);
+                return false;
+            }
+        }
+
+        // --- TAMBAHAN METHOD UNTUK MENONAKTIFKAN ADMIN / KASIR ---
+        public bool NonaktifkanAdmin(int idAdmin)
+        {
+            try
+            {
+                MySqlConnection conn = GetConn();
+                if (conn.State == ConnectionState.Closed) conn.Open();
+
+                string query = @"UPDATE manajemen_admin_kasir 
+                         SET STATUS='nonaktif'
+                         WHERE id_admin=@id";
+
+                cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id", idAdmin);
+
+                int result = cmd.ExecuteNonQuery();
+                conn.Close();
+
+                return result > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Gagal menonaktifkan admin:\n" + ex.Message);
                 return false;
             }
         }

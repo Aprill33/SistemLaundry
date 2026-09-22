@@ -30,9 +30,23 @@ namespace SistemLaundry.View
             dgv_transaksi.DataSource = dt;
             dgv_transaksi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
         private void btn_tambah_transaksi_Click(object sender, EventArgs e)
         {
             TambahTransaksi tambahTransaksi = new TambahTransaksi();
+
+            // Menyesuaikan ukuran layar (Maximized atau Normal)
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                tambahTransaksi.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                tambahTransaksi.StartPosition = FormStartPosition.Manual;
+                tambahTransaksi.Size = this.Size;
+                tambahTransaksi.Location = this.Location;
+            }
+
             tambahTransaksi.Show();
             this.Hide();
         }
@@ -40,9 +54,21 @@ namespace SistemLaundry.View
         private void btn_kembali_Click(object sender, EventArgs e)
         {
             MenuUtama menuUtama = new MenuUtama();
+
+            // Menyesuaikan ukuran layar (Maximized atau Normal)
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                menuUtama.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                menuUtama.StartPosition = FormStartPosition.Manual;
+                menuUtama.Size = this.Size;
+                menuUtama.Location = this.Location;
+            }
+
             menuUtama.Show();
             this.Hide();
-
         }
 
         private void btn_edit_status_Click(object sender, EventArgs e)
@@ -54,10 +80,8 @@ namespace SistemLaundry.View
 
                 DataRow selectedRow = rowView.Row;
 
-               
                 string statusLaundry = selectedRow["status_laundry"].ToString();
 
-                
                 if (statusLaundry != "Proses")
                 {
                     MessageBox.Show(
@@ -69,8 +93,20 @@ namespace SistemLaundry.View
                     return;
                 }
 
-                
                 EditTransaksi editTransaksi = new EditTransaksi(selectedRow);
+
+                // Menyesuaikan ukuran layar (Maximized atau Normal)
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    editTransaksi.WindowState = FormWindowState.Maximized;
+                }
+                else
+                {
+                    editTransaksi.StartPosition = FormStartPosition.Manual;
+                    editTransaksi.Size = this.Size;
+                    editTransaksi.Location = this.Location;
+                }
+
                 editTransaksi.Show();
                 this.Hide();
             }
@@ -78,7 +114,6 @@ namespace SistemLaundry.View
             {
                 MessageBox.Show("Silahkan pilih data transaksi terlebih dahulu!");
             }
-            
         }
 
         private void txt_pencarian_TextChanged(object sender, EventArgs e)
@@ -99,8 +134,20 @@ namespace SistemLaundry.View
                     idTransaksi,
                     LaundryController.ModeDetailTransaksi.Admin
                 );
+
+                // Menyesuaikan ukuran layar (Maximized atau Normal)
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    detail.WindowState = FormWindowState.Maximized;
+                }
+                else
+                {
+                    detail.StartPosition = FormStartPosition.Manual;
+                    detail.Size = this.Size;
+                    detail.Location = this.Location;
+                }
+
                 detail.Show();
-                
             }
             else
             {
@@ -119,6 +166,11 @@ namespace SistemLaundry.View
 
                 btn_edit_status.Enabled = (status == "Proses");
             }
+        }
+
+        private void lbl_si_laundry_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -22,9 +22,6 @@ namespace SistemLaundry.View
             TampilData();
         }
 
-        // =====================================================
-        // TAMPIL DATA PELANGGAN
-        // =====================================================
         void TampilData()
         {
             dgv_pelanggan.DataSource = laundryController.GetDataPelanggan();
@@ -33,9 +30,6 @@ namespace SistemLaundry.View
             dgv_pelanggan.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
-        // =====================================================
-        // KLIK DATA GRID
-        // =====================================================
         private void dgv_pelanggan_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
@@ -47,12 +41,9 @@ namespace SistemLaundry.View
             txt_no_hp.Text = row.Cells["no_hp"].Value.ToString();
             txt_alamat.Text = row.Cells["alamat"].Value.ToString();
 
-            txt_id_pelanggan.Enabled = false; // ID tidak boleh diubah saat edit
+            txt_id_pelanggan.Enabled = false; 
         }
 
-        // =====================================================
-        // EDIT DATA PELANGGAN
-        // =====================================================
         private void btn_edit_Click(object sender, EventArgs e)
         {
             string id = txt_id_pelanggan.Text;
@@ -60,7 +51,6 @@ namespace SistemLaundry.View
             string nohp = txt_no_hp.Text;
             string alamat = txt_alamat.Text;
 
-            // VALIDASI EDIT (isEdit = true)
             if (!validationController.ValidasiPelanggan(id, nama, nohp, alamat, true))
                 return;
 
@@ -75,9 +65,6 @@ namespace SistemLaundry.View
             }
         }
 
-        // =====================================================
-        // HAPUS DATA (DENGAN CEK TRANSAKSI)
-        // =====================================================
         private void btn_hapus_Click(object sender, EventArgs e)
         {
             string id = txt_id_pelanggan.Text;
@@ -88,7 +75,6 @@ namespace SistemLaundry.View
                 return;
             }
 
-            // Cek relasi transaksi
             if (laundryController.CekPelangganPunyaTransaksi(id))
             {
                 MessageBox.Show(
@@ -119,20 +105,25 @@ namespace SistemLaundry.View
             }
         }
 
-        // =====================================================
-        // SEARCH DATA
-        // =====================================================
         private void txt_pencarian_TextChanged(object sender, EventArgs e)
         {
             dgv_pelanggan.DataSource = laundryController.Search(txt_pencarian.Text);
         }
 
-        // =====================================================
-        // NAVIGASI
-        // =====================================================
         private void btn_kembali_Click(object sender, EventArgs e)
         {
             MenuUtama menu = new MenuUtama();
+
+            // Menyesuaikan ukuran layar dengan form sebelumnya
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                menu.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                menu.WindowState = FormWindowState.Normal;
+            }
+
             menu.Show();
             this.Close();
         }

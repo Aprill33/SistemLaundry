@@ -63,12 +63,13 @@
             // 
             // panel_atas
             // 
+            this.panel_atas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_atas.BackColor = System.Drawing.Color.LavenderBlush;
             this.panel_atas.Controls.Add(this.lbl_edit_transaksi);
-            this.panel_atas.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_atas.Location = new System.Drawing.Point(0, 0);
             this.panel_atas.Name = "panel_atas";
-            this.panel_atas.Size = new System.Drawing.Size(1251, 65);
+            this.panel_atas.Size = new System.Drawing.Size(1248, 65);
             this.panel_atas.TabIndex = 0;
             // 
             // lbl_edit_transaksi
@@ -84,9 +85,7 @@
             // 
             // ShadowPanel_data_transaksi
             // 
-            this.ShadowPanel_data_transaksi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ShadowPanel_data_transaksi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ShadowPanel_data_transaksi.BackColor = System.Drawing.Color.Transparent;
             this.ShadowPanel_data_transaksi.Controls.Add(this.dtp_tgl_selesai);
             this.ShadowPanel_data_transaksi.Controls.Add(this.dtp_tanggal_masuk);
@@ -104,11 +103,12 @@
             this.ShadowPanel_data_transaksi.Location = new System.Drawing.Point(103, 150);
             this.ShadowPanel_data_transaksi.Name = "ShadowPanel_data_transaksi";
             this.ShadowPanel_data_transaksi.ShadowColor = System.Drawing.Color.Black;
-            this.ShadowPanel_data_transaksi.Size = new System.Drawing.Size(1052, 266);
+            this.ShadowPanel_data_transaksi.Size = new System.Drawing.Size(1049, 266);
             this.ShadowPanel_data_transaksi.TabIndex = 1;
             // 
             // dtp_tgl_selesai
             // 
+            this.dtp_tgl_selesai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtp_tgl_selesai.Checked = true;
             this.dtp_tgl_selesai.FillColor = System.Drawing.Color.Pink;
             this.dtp_tgl_selesai.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -124,6 +124,7 @@
             // 
             // dtp_tanggal_masuk
             // 
+            this.dtp_tanggal_masuk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtp_tanggal_masuk.Checked = true;
             this.dtp_tanggal_masuk.FillColor = System.Drawing.Color.Pink;
             this.dtp_tanggal_masuk.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -139,9 +140,7 @@
             // 
             // txt_status_laundry
             // 
-            this.txt_status_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_status_laundry.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_status_laundry.BorderColor = System.Drawing.Color.RosyBrown;
             this.txt_status_laundry.BorderThickness = 2;
             this.txt_status_laundry.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -165,14 +164,12 @@
             this.txt_status_laundry.PlaceholderText = "";
             this.txt_status_laundry.ReadOnly = true;
             this.txt_status_laundry.SelectedText = "";
-            this.txt_status_laundry.Size = new System.Drawing.Size(283, 39);
+            this.txt_status_laundry.Size = new System.Drawing.Size(280, 39);
             this.txt_status_laundry.TabIndex = 12;
             // 
             // txt_status_bayar
             // 
-            this.txt_status_bayar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_status_bayar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_status_bayar.BorderColor = System.Drawing.Color.RosyBrown;
             this.txt_status_bayar.BorderThickness = 2;
             this.txt_status_bayar.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -196,14 +193,12 @@
             this.txt_status_bayar.PlaceholderText = "";
             this.txt_status_bayar.ReadOnly = true;
             this.txt_status_bayar.SelectedText = "";
-            this.txt_status_bayar.Size = new System.Drawing.Size(253, 39);
+            this.txt_status_bayar.Size = new System.Drawing.Size(250, 39);
             this.txt_status_bayar.TabIndex = 13;
             // 
             // txt_id_transaksi
             // 
-            this.txt_id_transaksi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_id_transaksi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_id_transaksi.BorderColor = System.Drawing.Color.RosyBrown;
             this.txt_id_transaksi.BorderThickness = 2;
             this.txt_id_transaksi.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -227,7 +222,7 @@
             this.txt_id_transaksi.PlaceholderText = "";
             this.txt_id_transaksi.ReadOnly = true;
             this.txt_id_transaksi.SelectedText = "";
-            this.txt_id_transaksi.Size = new System.Drawing.Size(189, 35);
+            this.txt_id_transaksi.Size = new System.Drawing.Size(186, 35);
             this.txt_id_transaksi.TabIndex = 9;
             // 
             // lbl_Status_pembayaran
@@ -244,9 +239,7 @@
             // 
             // txt_id_pelanggan
             // 
-            this.txt_id_pelanggan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_id_pelanggan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txt_id_pelanggan.BorderColor = System.Drawing.Color.RosyBrown;
             this.txt_id_pelanggan.BorderThickness = 2;
             this.txt_id_pelanggan.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -270,11 +263,12 @@
             this.txt_id_pelanggan.PlaceholderText = "";
             this.txt_id_pelanggan.ReadOnly = true;
             this.txt_id_pelanggan.SelectedText = "";
-            this.txt_id_pelanggan.Size = new System.Drawing.Size(189, 39);
+            this.txt_id_pelanggan.Size = new System.Drawing.Size(186, 39);
             this.txt_id_pelanggan.TabIndex = 10;
             // 
             // lbl_tgl_Selesai
             // 
+            this.lbl_tgl_Selesai.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_tgl_Selesai.AutoSize = true;
             this.lbl_tgl_Selesai.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tgl_Selesai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -287,6 +281,7 @@
             // 
             // lbl_status_laundry
             // 
+            this.lbl_status_laundry.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_status_laundry.AutoSize = true;
             this.lbl_status_laundry.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_status_laundry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -299,6 +294,7 @@
             // 
             // lbl_tgl_masuk
             // 
+            this.lbl_tgl_masuk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_tgl_masuk.AutoSize = true;
             this.lbl_tgl_masuk.Font = new System.Drawing.Font("Imprint MT Shadow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_tgl_masuk.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -335,9 +331,7 @@
             // 
             // lbl_si_laundry
             // 
-            this.lbl_si_laundry.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_si_laundry.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_si_laundry.AutoSize = true;
             this.lbl_si_laundry.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_si_laundry.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(128)))));
@@ -349,9 +343,7 @@
             // 
             // lbl_slogan
             // 
-            this.lbl_slogan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_slogan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_slogan.AutoSize = true;
             this.lbl_slogan.BackColor = System.Drawing.Color.Transparent;
             this.lbl_slogan.Font = new System.Drawing.Font("Goudy Old Style", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -400,19 +392,17 @@
             // 
             // panel_bawah
             // 
+            this.panel_bawah.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.panel_bawah.Controls.Add(this.btn_simpan);
             this.panel_bawah.Controls.Add(this.btn_kembali);
-            this.panel_bawah.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel_bawah.Location = new System.Drawing.Point(0, 582);
             this.panel_bawah.Name = "panel_bawah";
-            this.panel_bawah.Size = new System.Drawing.Size(1251, 88);
+            this.panel_bawah.Size = new System.Drawing.Size(1248, 88);
             this.panel_bawah.TabIndex = 12;
             // 
             // btn_simpan
             // 
-            this.btn_simpan.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_simpan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_simpan.BorderColor = System.Drawing.Color.RosyBrown;
             this.btn_simpan.BorderRadius = 5;
             this.btn_simpan.BorderThickness = 2;
@@ -429,16 +419,14 @@
             this.btn_simpan.Location = new System.Drawing.Point(711, 21);
             this.btn_simpan.Margin = new System.Windows.Forms.Padding(3, 5, 15, 5);
             this.btn_simpan.Name = "btn_simpan";
-            this.btn_simpan.Size = new System.Drawing.Size(137, 48);
+            this.btn_simpan.Size = new System.Drawing.Size(134, 48);
             this.btn_simpan.TabIndex = 10;
             this.btn_simpan.Text = "Simpan";
             this.btn_simpan.Click += new System.EventHandler(this.btn_simpan_Click);
             // 
             // btn_kembali
             // 
-            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_kembali.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btn_kembali.BorderColor = System.Drawing.Color.RosyBrown;
             this.btn_kembali.BorderRadius = 5;
             this.btn_kembali.BorderThickness = 2;
@@ -455,16 +443,14 @@
             this.btn_kembali.Location = new System.Drawing.Point(391, 21);
             this.btn_kembali.Margin = new System.Windows.Forms.Padding(3, 5, 15, 5);
             this.btn_kembali.Name = "btn_kembali";
-            this.btn_kembali.Size = new System.Drawing.Size(137, 48);
+            this.btn_kembali.Size = new System.Drawing.Size(134, 48);
             this.btn_kembali.TabIndex = 9;
             this.btn_kembali.Text = "Kembali";
             this.btn_kembali.Click += new System.EventHandler(this.btn_kembali_Click);
             // 
             // Shadowpanel_data_transaksi2
             // 
-            this.Shadowpanel_data_transaksi2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Shadowpanel_data_transaksi2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Shadowpanel_data_transaksi2.BackColor = System.Drawing.Color.LavenderBlush;
             this.Shadowpanel_data_transaksi2.Controls.Add(this.txt_kembalian);
             this.Shadowpanel_data_transaksi2.Controls.Add(this.txt_jumlah_uang);
@@ -476,7 +462,7 @@
             this.Shadowpanel_data_transaksi2.Location = new System.Drawing.Point(103, 422);
             this.Shadowpanel_data_transaksi2.Name = "Shadowpanel_data_transaksi2";
             this.Shadowpanel_data_transaksi2.ShadowColor = System.Drawing.Color.Black;
-            this.Shadowpanel_data_transaksi2.Size = new System.Drawing.Size(1052, 154);
+            this.Shadowpanel_data_transaksi2.Size = new System.Drawing.Size(1049, 154);
             this.Shadowpanel_data_transaksi2.TabIndex = 13;
             // 
             // txt_kembalian
@@ -507,7 +493,7 @@
             this.txt_kembalian.PlaceholderText = "";
             this.txt_kembalian.ReadOnly = true;
             this.txt_kembalian.SelectedText = "";
-            this.txt_kembalian.Size = new System.Drawing.Size(283, 39);
+            this.txt_kembalian.Size = new System.Drawing.Size(280, 39);
             this.txt_kembalian.TabIndex = 21;
             // 
             // txt_jumlah_uang
@@ -538,7 +524,7 @@
             this.txt_jumlah_uang.PlaceholderText = "";
             this.txt_jumlah_uang.ReadOnly = true;
             this.txt_jumlah_uang.SelectedText = "";
-            this.txt_jumlah_uang.Size = new System.Drawing.Size(283, 39);
+            this.txt_jumlah_uang.Size = new System.Drawing.Size(280, 39);
             this.txt_jumlah_uang.TabIndex = 20;
             // 
             // txt_total
@@ -569,7 +555,7 @@
             this.txt_total.PlaceholderText = "";
             this.txt_total.ReadOnly = true;
             this.txt_total.SelectedText = "";
-            this.txt_total.Size = new System.Drawing.Size(283, 39);
+            this.txt_total.Size = new System.Drawing.Size(280, 39);
             this.txt_total.TabIndex = 19;
             // 
             // EditTransaksi
@@ -577,7 +563,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(1251, 670);
+            this.ClientSize = new System.Drawing.Size(1248, 670);
             this.Controls.Add(this.Shadowpanel_data_transaksi2);
             this.Controls.Add(this.panel_bawah);
             this.Controls.Add(this.lbl_slogan);
